@@ -1,0 +1,11 @@
+# runtime (what the server needs)
+fastapi>=0.110
+uvicorn>=0.29
+pydantic>=2.5
+numpy>=1.24
+networkx>=3.1
+scikit-learn>=1.3
+httpx>=0.25
+# XGBoost: the slim CPU-only build on Linux servers (Render), the regular package elsewhere
+xgboost-cpu>=3.0; platform_system == "Linux"
+xgboost>=2.0; platform_system != "Linux"

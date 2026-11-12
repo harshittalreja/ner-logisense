@@ -1,0 +1,17 @@
+# Render Blueprint: New → Blueprint → pick this repo → Apply.
+services:
+  - type: web
+    name: ner-logisense
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn backend.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    autoDeploy: true
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: NER_DB                 # free instances have no persistent disk; state resets on restart
+        value: /tmp/ner_logisense.db
+      - key: NER_SIM_SPEEDUP        # simulated trucks run 30x faster than real time
+        value: "30"
