@@ -1,0 +1,11 @@
+{
+  "name": "NER-LogiSense Driver",
+  "short_name": "LogiSense",
+  "description": "Offline-first hazard reporting for convoys on Northeast India's hill corridors.",
+  "start_url": "/driver",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0b0e13",
+  "theme_color": "#11151c",
+  "icons": [{ "src": "/static/icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }]
+}

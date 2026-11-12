@@ -1,0 +1,4510 @@
+{
+ "version": "ner-corridors-0.3",
+ "note": "Prototype graph: real towns/corridors, estimated terrain attributes. See docs/DATA.md.",
+ "nodes": [
+  {
+   "id": "SLG",
+   "name": "Siliguri",
+   "state": "West Bengal",
+   "lat": 26.727,
+   "lon": 88.395,
+   "elevation_m": 120,
+   "kind": "hub",
+   "met_zone": "NB"
+  },
+  {
+   "id": "SVK",
+   "name": "Sevoke (Coronation Br.)",
+   "state": "West Bengal",
+   "lat": 26.905,
+   "lon": 88.472,
+   "elevation_m": 150,
+   "kind": "junction",
+   "met_zone": "NB"
+  },
+  {
+   "id": "TBZ",
+   "name": "Teesta Bazar",
+   "state": "West Bengal",
+   "lat": 27.064,
+   "lon": 88.435,
+   "elevation_m": 250,
+   "kind": "town",
+   "met_zone": "SK"
+  },
+  {
+   "id": "MLI",
+   "name": "Melli",
+   "state": "Sikkim",
+   "lat": 27.1,
+   "lon": 88.47,
+   "elevation_m": 300,
+   "kind": "town",
+   "met_zone": "SK"
+  },
+  {
+   "id": "RNP",
+   "name": "Rangpo",
+   "state": "Sikkim",
+   "lat": 27.176,
+   "lon": 88.53,
+   "elevation_m": 330,
+   "kind": "town",
+   "met_zone": "SK"
+  },
+  {
+   "id": "SNG",
+   "name": "Singtam",
+   "state": "Sikkim",
+   "lat": 27.233,
+   "lon": 88.497,
+   "elevation_m": 450,
+   "kind": "town",
+   "met_zone": "SK"
+  },
+  {
+   "id": "GTK",
+   "name": "Gangtok",
+   "state": "Sikkim",
+   "lat": 27.33,
+   "lon": 88.612,
+   "elevation_m": 1650,
+   "kind": "hub",
+   "met_zone": "SK"
+  },
+  {
+   "id": "KLP",
+   "name": "Kalimpong",
+   "state": "West Bengal",
+   "lat": 27.06,
+   "lon": 88.47,
+   "elevation_m": 1250,
+   "kind": "town",
+   "met_zone": "SK"
+  },
+  {
+   "id": "MAL",
+   "name": "Malbazar",
+   "state": "West Bengal",
+   "lat": 26.85,
+   "lon": 88.74,
+   "elevation_m": 150,
+   "kind": "town",
+   "met_zone": "NB"
+  },
+  {
+   "id": "GRB",
+   "name": "Gorubathan",
+   "state": "West Bengal",
+   "lat": 26.97,
+   "lon": 88.7,
+   "elevation_m": 300,
+   "kind": "town",
+   "met_zone": "NB"
+  },
+  {
+   "id": "LAV",
+   "name": "Lava",
+   "state": "West Bengal",
+   "lat": 27.087,
+   "lon": 88.664,
+   "elevation_m": 2150,
+   "kind": "town",
+   "met_zone": "SK"
+  },
+  {
+   "id": "PDG",
+   "name": "Pedong",
+   "state": "West Bengal",
+   "lat": 27.155,
+   "lon": 88.61,
+   "elevation_m": 1400,
+   "kind": "town",
+   "met_zone": "SK"
+  },
+  {
+   "id": "RNK",
+   "name": "Rhenock",
+   "state": "Sikkim",
+   "lat": 27.18,
+   "lon": 88.645,
+   "elevation_m": 1100,
+   "kind": "town",
+   "met_zone": "SK"
+  },
+  {
+   "id": "PKY",
+   "name": "Pakyong",
+   "state": "Sikkim",
+   "lat": 27.23,
+   "lon": 88.59,
+   "elevation_m": 1400,
+   "kind": "town",
+   "met_zone": "SK"
+  },
+  {
+   "id": "DHP",
+   "name": "Dhupguri",
+   "state": "West Bengal",
+   "lat": 26.59,
+   "lon": 89.01,
+   "elevation_m": 90,
+   "kind": "town",
+   "met_zone": "NB"
+  },
+  {
+   "id": "SRP",
+   "name": "Srirampur Gate",
+   "state": "Assam",
+   "lat": 26.44,
+   "lon": 89.93,
+   "elevation_m": 50,
+   "kind": "junction",
+   "met_zone": "LA"
+  },
+  {
+   "id": "BNG",
+   "name": "Bongaigaon",
+   "state": "Assam",
+   "lat": 26.48,
+   "lon": 90.56,
+   "elevation_m": 60,
+   "kind": "town",
+   "met_zone": "LA"
+  },
+  {
+   "id": "DHB",
+   "name": "Dhubri Ghat",
+   "state": "Assam",
+   "lat": 26.02,
+   "lon": 89.98,
+   "elevation_m": 30,
+   "kind": "ferry",
+   "met_zone": "LA"
+  },
+  {
+   "id": "HTS",
+   "name": "Hatsingimari Ghat",
+   "state": "Assam",
+   "lat": 25.87,
+   "lon": 89.99,
+   "elevation_m": 30,
+   "kind": "ferry",
+   "met_zone": "GH"
+  },
+  {
+   "id": "TUR",
+   "name": "Tura",
+   "state": "Meghalaya",
+   "lat": 25.51,
+   "lon": 90.22,
+   "elevation_m": 350,
+   "kind": "town",
+   "met_zone": "GH"
+  },
+  {
+   "id": "GLP",
+   "name": "Goalpara",
+   "state": "Assam",
+   "lat": 26.17,
+   "lon": 90.62,
+   "elevation_m": 50,
+   "kind": "town",
+   "met_zone": "LA"
+  },
+  {
+   "id": "GHY",
+   "name": "Guwahati",
+   "state": "Assam",
+   "lat": 26.144,
+   "lon": 91.736,
+   "elevation_m": 55,
+   "kind": "hub",
+   "met_zone": "LA"
+  },
+  {
+   "id": "JRB",
+   "name": "Jorabat",
+   "state": "Assam",
+   "lat": 26.107,
+   "lon": 91.86,
+   "elevation_m": 60,
+   "kind": "junction",
+   "met_zone": "LA"
+  },
+  {
+   "id": "NGP",
+   "name": "Nongpoh",
+   "state": "Meghalaya",
+   "lat": 25.9,
+   "lon": 91.88,
+   "elevation_m": 500,
+   "kind": "town",
+   "met_zone": "ML"
+  },
+  {
+   "id": "UMI",
+   "name": "Umiam",
+   "state": "Meghalaya",
+   "lat": 25.67,
+   "lon": 91.89,
+   "elevation_m": 1000,
+   "kind": "town",
+   "met_zone": "ML"
+  },
+  {
+   "id": "SHL",
+   "name": "Shillong",
+   "state": "Meghalaya",
+   "lat": 25.57,
+   "lon": 91.88,
+   "elevation_m": 1500,
+   "kind": "hub",
+   "met_zone": "ML"
+  },
+  {
+   "id": "JWI",
+   "name": "Jowai",
+   "state": "Meghalaya",
+   "lat": 25.45,
+   "lon": 92.2,
+   "elevation_m": 1380,
+   "kind": "town",
+   "met_zone": "ML"
+  },
+  {
+   "id": "KHL",
+   "name": "Khliehriat",
+   "state": "Meghalaya",
+   "lat": 25.36,
+   "lon": 92.37,
+   "elevation_m": 1200,
+   "kind": "town",
+   "met_zone": "ML"
+  },
+  {
+   "id": "SNP",
+   "name": "Sonapur",
+   "state": "Meghalaya",
+   "lat": 25.13,
+   "lon": 92.43,
+   "elevation_m": 600,
+   "kind": "town",
+   "met_zone": "ML"
+  },
+  {
+   "id": "RTC",
+   "name": "Ratacherra",
+   "state": "Assam",
+   "lat": 24.99,
+   "lon": 92.52,
+   "elevation_m": 60,
+   "kind": "town",
+   "met_zone": "BV"
+  },
+  {
+   "id": "BDP",
+   "name": "Badarpur",
+   "state": "Assam",
+   "lat": 24.868,
+   "lon": 92.595,
+   "elevation_m": 20,
+   "kind": "junction",
+   "met_zone": "BV"
+  },
+  {
+   "id": "SCR",
+   "name": "Silchar",
+   "state": "Assam",
+   "lat": 24.827,
+   "lon": 92.797,
+   "elevation_m": 22,
+   "kind": "hub",
+   "met_zone": "BV"
+  },
+  {
+   "id": "KMJ",
+   "name": "Karimganj",
+   "state": "Assam",
+   "lat": 24.87,
+   "lon": 92.36,
+   "elevation_m": 15,
+   "kind": "town",
+   "met_zone": "BV"
+  },
+  {
+   "id": "NGN",
+   "name": "Nagaon",
+   "state": "Assam",
+   "lat": 26.35,
+   "lon": 92.68,
+   "elevation_m": 60,
+   "kind": "town",
+   "met_zone": "CA"
+  },
+  {
+   "id": "LNK",
+   "name": "Lanka",
+   "state": "Assam",
+   "lat": 25.93,
+   "lon": 92.95,
+   "elevation_m": 80,
+   "kind": "town",
+   "met_zone": "CA"
+  },
+  {
+   "id": "MBG",
+   "name": "Maibang",
+   "state": "Assam",
+   "lat": 25.3,
+   "lon": 93.13,
+   "elevation_m": 350,
+   "kind": "town",
+   "met_zone": "DH"
+  },
+  {
+   "id": "HRJ",
+   "name": "Harangajao",
+   "state": "Assam",
+   "lat": 25.1,
+   "lon": 92.87,
+   "elevation_m": 600,
+   "kind": "town",
+   "met_zone": "DH"
+  },
+  {
+   "id": "BLC",
+   "name": "Balacherra",
+   "state": "Assam",
+   "lat": 24.96,
+   "lon": 92.85,
+   "elevation_m": 50,
+   "kind": "town",
+   "met_zone": "BV"
+  },
+  {
+   "id": "LMD",
+   "name": "Lumding Jn",
+   "state": "Assam",
+   "lat": 25.75,
+   "lon": 93.17,
+   "elevation_m": 150,
+   "kind": "rail",
+   "met_zone": "CA"
+  },
+  {
+   "id": "NHF",
+   "name": "New Haflong",
+   "state": "Assam",
+   "lat": 25.17,
+   "lon": 93.02,
+   "elevation_m": 700,
+   "kind": "rail",
+   "met_zone": "DH"
+  },
+  {
+   "id": "DBK",
+   "name": "Doboka",
+   "state": "Assam",
+   "lat": 26.1,
+   "lon": 92.93,
+   "elevation_m": 70,
+   "kind": "town",
+   "met_zone": "CA"
+  },
+  {
+   "id": "BKJ",
+   "name": "Bokajan",
+   "state": "Assam",
+   "lat": 26.02,
+   "lon": 93.77,
+   "elevation_m": 120,
+   "kind": "town",
+   "met_zone": "CA"
+  },
+  {
+   "id": "DMR",
+   "name": "Dimapur",
+   "state": "Nagaland",
+   "lat": 25.906,
+   "lon": 93.727,
+   "elevation_m": 150,
+   "kind": "hub",
+   "met_zone": "NL"
+  },
+  {
+   "id": "GLG",
+   "name": "Golaghat",
+   "state": "Assam",
+   "lat": 26.52,
+   "lon": 93.97,
+   "elevation_m": 90,
+   "kind": "town",
+   "met_zone": "UA"
+  },
+  {
+   "id": "JRT",
+   "name": "Jorhat",
+   "state": "Assam",
+   "lat": 26.75,
+   "lon": 94.2,
+   "elevation_m": 100,
+   "kind": "town",
+   "met_zone": "UA"
+  },
+  {
+   "id": "SVS",
+   "name": "Sivasagar",
+   "state": "Assam",
+   "lat": 26.98,
+   "lon": 94.64,
+   "elevation_m": 95,
+   "kind": "town",
+   "met_zone": "UA"
+  },
+  {
+   "id": "DBR",
+   "name": "Dibrugarh",
+   "state": "Assam",
+   "lat": 27.47,
+   "lon": 94.91,
+   "elevation_m": 110,
+   "kind": "hub",
+   "met_zone": "UA"
+  },
+  {
+   "id": "KLB",
+   "name": "Kaliabor",
+   "state": "Assam",
+   "lat": 26.55,
+   "lon": 92.99,
+   "elevation_m": 70,
+   "kind": "junction",
+   "met_zone": "CA"
+  },
+  {
+   "id": "KZR",
+   "name": "Kaziranga (Bokakhat)",
+   "state": "Assam",
+   "lat": 26.64,
+   "lon": 93.6,
+   "elevation_m": 80,
+   "kind": "town",
+   "met_zone": "UA"
+  },
+  {
+   "id": "NMT",
+   "name": "Neamati Ghat",
+   "state": "Assam",
+   "lat": 26.83,
+   "lon": 94.25,
+   "elevation_m": 90,
+   "kind": "ferry",
+   "met_zone": "UA"
+  },
+  {
+   "id": "KMB",
+   "name": "Kamalabari (Majuli)",
+   "state": "Assam",
+   "lat": 26.95,
+   "lon": 94.17,
+   "elevation_m": 85,
+   "kind": "ferry",
+   "met_zone": "UA"
+  },
+  {
+   "id": "CHM",
+   "name": "Chumoukedima",
+   "state": "Nagaland",
+   "lat": 25.79,
+   "lon": 93.78,
+   "elevation_m": 200,
+   "kind": "town",
+   "met_zone": "NL"
+  },
+  {
+   "id": "PPH",
+   "name": "Pagla Pahar",
+   "state": "Nagaland",
+   "lat": 25.73,
+   "lon": 93.93,
+   "elevation_m": 500,
+   "kind": "town",
+   "met_zone": "NL"
+  },
+  {
+   "id": "KOH",
+   "name": "Kohima",
+   "state": "Nagaland",
+   "lat": 25.67,
+   "lon": 94.11,
+   "elevation_m": 1440,
+   "kind": "town",
+   "met_zone": "NL"
+  },
+  {
+   "id": "MAO",
+   "name": "Mao",
+   "state": "Manipur",
+   "lat": 25.52,
+   "lon": 94.14,
+   "elevation_m": 1800,
+   "kind": "town",
+   "met_zone": "MN"
+  },
+  {
+   "id": "SPT",
+   "name": "Senapati",
+   "state": "Manipur",
+   "lat": 25.27,
+   "lon": 94.02,
+   "elevation_m": 1100,
+   "kind": "town",
+   "met_zone": "MN"
+  },
+  {
+   "id": "KGK",
+   "name": "Kangpokpi",
+   "state": "Manipur",
+   "lat": 25.14,
+   "lon": 93.97,
+   "elevation_m": 1000,
+   "kind": "town",
+   "met_zone": "MN"
+  },
+  {
+   "id": "IMP",
+   "name": "Imphal",
+   "state": "Manipur",
+   "lat": 24.81,
+   "lon": 93.94,
+   "elevation_m": 790,
+   "kind": "hub",
+   "met_zone": "MN"
+  },
+  {
+   "id": "JRI",
+   "name": "Jiribam",
+   "state": "Manipur",
+   "lat": 24.8,
+   "lon": 93.12,
+   "elevation_m": 40,
+   "kind": "town",
+   "met_zone": "BV"
+  },
+  {
+   "id": "NGB",
+   "name": "Nungba",
+   "state": "Manipur",
+   "lat": 24.77,
+   "lon": 93.43,
+   "elevation_m": 400,
+   "kind": "town",
+   "met_zone": "MN"
+  },
+  {
+   "id": "NNY",
+   "name": "Noney",
+   "state": "Manipur",
+   "lat": 24.86,
+   "lon": 93.61,
+   "elevation_m": 800,
+   "kind": "town",
+   "met_zone": "MN"
+  },
+  {
+   "id": "VRT",
+   "name": "Vairengte",
+   "state": "Mizoram",
+   "lat": 24.5,
+   "lon": 92.75,
+   "elevation_m": 100,
+   "kind": "town",
+   "met_zone": "MZ"
+  },
+  {
+   "id": "KLS",
+   "name": "Kolasib",
+   "state": "Mizoram",
+   "lat": 24.22,
+   "lon": 92.68,
+   "elevation_m": 600,
+   "kind": "town",
+   "met_zone": "MZ"
+  },
+  {
+   "id": "AZL",
+   "name": "Aizawl",
+   "state": "Mizoram",
+   "lat": 23.73,
+   "lon": 92.72,
+   "elevation_m": 1100,
+   "kind": "hub",
+   "met_zone": "MZ"
+  },
+  {
+   "id": "BRB",
+   "name": "Bairabi",
+   "state": "Mizoram",
+   "lat": 24.19,
+   "lon": 92.53,
+   "elevation_m": 50,
+   "kind": "rail",
+   "met_zone": "MZ"
+  },
+  {
+   "id": "SRG",
+   "name": "Sairang",
+   "state": "Mizoram",
+   "lat": 23.81,
+   "lon": 92.66,
+   "elevation_m": 150,
+   "kind": "rail",
+   "met_zone": "MZ"
+  },
+  {
+   "id": "CHB",
+   "name": "Churaibari",
+   "state": "Tripura",
+   "lat": 24.43,
+   "lon": 92.23,
+   "elevation_m": 30,
+   "kind": "town",
+   "met_zone": "TR"
+  },
+  {
+   "id": "DMN",
+   "name": "Dharmanagar",
+   "state": "Tripura",
+   "lat": 24.37,
+   "lon": 92.17,
+   "elevation_m": 30,
+   "kind": "town",
+   "met_zone": "TR"
+  },
+  {
+   "id": "KMG",
+   "name": "Kumarghat",
+   "state": "Tripura",
+   "lat": 24.16,
+   "lon": 92.03,
+   "elevation_m": 30,
+   "kind": "town",
+   "met_zone": "TR"
+  },
+  {
+   "id": "AMB",
+   "name": "Ambassa",
+   "state": "Tripura",
+   "lat": 23.93,
+   "lon": 91.85,
+   "elevation_m": 400,
+   "kind": "town",
+   "met_zone": "TR"
+  },
+  {
+   "id": "TLM",
+   "name": "Teliamura",
+   "state": "Tripura",
+   "lat": 23.84,
+   "lon": 91.63,
+   "elevation_m": 100,
+   "kind": "town",
+   "met_zone": "TR"
+  },
+  {
+   "id": "AGT",
+   "name": "Agartala",
+   "state": "Tripura",
+   "lat": 23.83,
+   "lon": 91.28,
+   "elevation_m": 15,
+   "kind": "hub",
+   "met_zone": "TR"
+  },
+  {
+   "id": "MGD",
+   "name": "Mangaldoi",
+   "state": "Assam",
+   "lat": 26.44,
+   "lon": 92.03,
+   "elevation_m": 50,
+   "kind": "town",
+   "met_zone": "LA"
+  },
+  {
+   "id": "TZP",
+   "name": "Tezpur",
+   "state": "Assam",
+   "lat": 26.63,
+   "lon": 92.8,
+   "elevation_m": 80,
+   "kind": "town",
+   "met_zone": "NBK"
+  },
+  {
+   "id": "BLP",
+   "name": "Balipara",
+   "state": "Assam",
+   "lat": 26.83,
+   "lon": 92.78,
+   "elevation_m": 100,
+   "kind": "junction",
+   "met_zone": "NBK"
+  },
+  {
+   "id": "BHK",
+   "name": "Bhalukpong",
+   "state": "Arunachal Pradesh",
+   "lat": 27.01,
+   "lon": 92.65,
+   "elevation_m": 200,
+   "kind": "town",
+   "met_zone": "WK"
+  },
+  {
+   "id": "BMD",
+   "name": "Bomdila",
+   "state": "Arunachal Pradesh",
+   "lat": 27.26,
+   "lon": 92.41,
+   "elevation_m": 2400,
+   "kind": "town",
+   "met_zone": "WK"
+  },
+  {
+   "id": "DRG",
+   "name": "Dirang",
+   "state": "Arunachal Pradesh",
+   "lat": 27.36,
+   "lon": 92.24,
+   "elevation_m": 1500,
+   "kind": "town",
+   "met_zone": "WK"
+  },
+  {
+   "id": "SLA",
+   "name": "Sela Tunnel",
+   "state": "Arunachal Pradesh",
+   "lat": 27.5,
+   "lon": 92.1,
+   "elevation_m": 4000,
+   "kind": "junction",
+   "met_zone": "TW"
+  },
+  {
+   "id": "TWG",
+   "name": "Tawang",
+   "state": "Arunachal Pradesh",
+   "lat": 27.586,
+   "lon": 91.866,
+   "elevation_m": 2700,
+   "kind": "town",
+   "met_zone": "TW"
+  },
+  {
+   "id": "GHP",
+   "name": "Gohpur",
+   "state": "Assam",
+   "lat": 26.88,
+   "lon": 93.62,
+   "elevation_m": 90,
+   "kind": "town",
+   "met_zone": "NBK"
+  },
+  {
+   "id": "ITN",
+   "name": "Itanagar",
+   "state": "Arunachal Pradesh",
+   "lat": 27.09,
+   "lon": 93.61,
+   "elevation_m": 400,
+   "kind": "hub",
+   "met_zone": "AR"
+  },
+  {
+   "id": "NLK",
+   "name": "North Lakhimpur",
+   "state": "Assam",
+   "lat": 27.24,
+   "lon": 94.1,
+   "elevation_m": 100,
+   "kind": "town",
+   "met_zone": "NBK"
+  },
+  {
+   "id": "DMJ",
+   "name": "Dhemaji",
+   "state": "Assam",
+   "lat": 27.48,
+   "lon": 94.58,
+   "elevation_m": 110,
+   "kind": "town",
+   "met_zone": "UA"
+  },
+  {
+   "id": "PSG",
+   "name": "Pasighat",
+   "state": "Arunachal Pradesh",
+   "lat": 28.07,
+   "lon": 95.33,
+   "elevation_m": 150,
+   "kind": "town",
+   "met_zone": "AR"
+  }
+ ],
+ "edges": [
+  {
+   "id": "SLG-SVK",
+   "source": "SLG",
+   "target": "SVK",
+   "mode": "road",
+   "route_ref": "NH10",
+   "road_class": "NH",
+   "terrain": "plain",
+   "length_km": 26.5,
+   "base_speed_kmh": 45,
+   "base_time_h": 0.59,
+   "slope_deg": 4,
+   "elevation_m": 150,
+   "landslide_hist": 1,
+   "river": "",
+   "river_adjacent": false,
+   "no_network": false,
+   "note": "",
+   "met_zones": [
+    "NB"
+   ],
+   "geometry": [
+    [
+     88.395,
+     26.727
+    ],
+    [
+     88.472,
+     26.905
+    ]
+   ]
+  },
+  {
+   "id": "SVK-TBZ",
+   "source": "SVK",
+   "target": "TBZ",
+   "mode": "road",
+   "route_ref": "NH10",
+   "road_class": "NH",
+   "terrain": "hill",
+   "length_km": 28.0,
+   "base_speed_kmh": 25,
+   "base_time_h": 1.12,
+   "slope_deg": 33,
+   "elevation_m": 250,
+   "landslide_hist": 26,
+   "river": "Teesta",
+   "river_adjacent": true,
+   "no_network": true,
+   "note": "Chitrey \u00b7 Selfie Dara slide zone; road bed on Teesta bank",
+   "met_zones": [
+    "NB",
+    "SK"
+   ],
+   "geometry": [
+    [
+     88.472,
+     26.905
+    ],
+    [
+     88.435,
+     27.064
+    ]
+   ]
+  },
+  {
+   "id": "TBZ-MLI",
+   "source": "TBZ",
+   "target": "MLI",
+   "mode": "road",
+   "route_ref": "NH10",
+   "road_class": "NH",
+   "terrain": "hill",
+   "length_km": 8.2,
+   "base_speed_kmh": 25,
+   "base_time_h": 0.33,
+   "slope_deg": 30,
+   "elevation_m": 300,
+   "landslide_hist": 14,
+   "river": "Teesta",
+   "river_adjacent": true,
+   "no_network": false,
+   "note": "29th Mile slide belt",
+   "met_zones": [
+    "SK"
+   ],
+   "geometry": [
+    [
+     88.435,
+     27.064
+    ],
+    [
+     88.47,
+     27.1
+    ]
+   ]
+  },
+  {
+   "id": "MLI-RNP",
+   "source": "MLI",
+   "target": "RNP",
+   "mode": "road",
+   "route_ref": "NH10",
+   "road_class": "NH",
+   "terrain": "hill",
+   "length_km": 16.0,
+   "base_speed_kmh": 25,
+   "base_time_h": 0.64,
+   "slope_deg": 27,
+   "elevation_m": 330,
+   "landslide_hist": 9,
+   "river": "Teesta",
+   "river_adjacent": true,
+   "no_network": false,
+   "note": "",
+   "met_zones": [
+    "SK"
+   ],
+   "geometry": [
+    [
+     88.47,
+     27.1
+    ],
+    [
+     88.53,
+     27.176
+    ]
+   ]
+  },
+  {
+   "id": "RNP-SNG",
+   "source": "RNP",
+   "target": "SNG",
+   "mode": "road",
+   "route_ref": "NH10",
+   "road_class": "NH",
+   "terrain": "hill",
+   "length_km": 11.0,
+   "base_speed_kmh": 25,
+   "base_time_h": 0.44,
+   "slope_deg": 25,
+   "elevation_m": 450,
+   "landslide_hist": 7,
+   "river": "Teesta",
+   "river_adjacent": true,
+   "no_network": false,
+   "note": "",
+   "met_zones": [
+    "SK"
+   ],
+   "geometry": [
+    [
+     88.53,
+     27.176
+    ],
+    [
+     88.497,
+     27.233
+    ]
+   ]
+  },
+  {
+   "id": "SNG-GTK",
+   "source": "SNG",
+   "target": "GTK",
+   "mode": "road",
+   "route_ref": "NH10",
+   "road_class": "NH",
+   "terrain": "hill",
+   "length_km": 24.3,
+   "base_speed_kmh": 25,
+   "base_time_h": 0.97,
+   "slope_deg": 26,
+   "elevation_m": 1650,
+   "landslide_hist": 8,
+   "river": "",
+   "river_adjacent": false,
+   "no_network": false,
+   "note": "",
+   "met_zones": [
+    "SK"
+   ],
+   "geometry": [
+    [
+     88.497,
+     27.233
+    ],
+    [
+     88.612,
+     27.33
+    ]
+   ]
+  },
+  {
+   "id": "SLG-MAL",
+   "source": "SLG",
+   "target": "MAL",
+   "mode": "road",
+   "route_ref": "NH27",
+   "road_class": "NH",
+   "terrain": "plain",
+   "length_km": 46.1,
+   "base_speed_kmh": 45,
+   "base_time_h": 1.02,
+   "slope_deg": 3,
+   "elevation_m": 150,
+   "landslide_hist": 0,
+   "river": "",
+   "river_adjacent": false,
+   "no_network": false,
+   "note": "",
+   "met_zones": [
+    "NB"
+   ],
+   "geometry": [
+    [
+     88.395,
+     26.727
+    ],
+    [
+     88.74,
+     26.85
+    ]
+   ]
+  },
+  {
+   "id": "MAL-GRB",
+   "source": "MAL",
+   "target": "GRB",
+   "mode": "road",
+   "route_ref": "NH717A",
+   "road_class": "NH",
+   "terrain": "hill",
+   "length_km": 21.6,
+   "base_speed_kmh": 25,
+   "base_time_h": 0.86,
+   "slope_deg": 14,
+   "elevation_m": 300,
+   "landslide_hist": 2,
+   "river": "",
+   "river_adjacent": false,
+   "no_network": false,
+   "note": "",
+   "met_zones": [
+    "NB"
+   ],
+   "geometry": [
+    [
+     88.74,
+     26.85
+    ],
+    [
+     88.7,
+     26.97
+    ]
+   ]
+  },
+  {
+   "id": "GRB-LAV",
+   "source": "GRB",
+   "target": "LAV",
+   "mode": "road",
+   "route_ref": "NH717A",
+   "road_class": "NH",
+   "terrain": "mountain",
+   "length_km": 23.6,
+   "base_speed_kmh": 18,
+   "base_time_h": 1.31,
+   "slope_deg": 29,
+   "elevation_m": 2150,
+   "landslide_hist": 6,
+   "river": "",
+   "river_adjacent": false,
+   "no_network": true,
+   "note": "Narrow single-lane climb; fog",
+   "met_zones": [
+    "NB",
+    "SK"
+   ],
+   "geometry": [
+    [
+     88.7,
+     26.97
+    ],
+    [
+     88.664,
+     27.087
+    ]
+   ]
+  },
+  {
+   "id": "LAV-PDG",
+   "source": "LAV",
+   "target": "PDG",
+   "mode": "road",
+   "route_ref": "NH717A",
+   "road_class": "NH",
+   "terrain": "mountain",
+   "length_km": 16.2,
+   "base_speed_kmh": 18,
+   "base_time_h": 0.9,
+   "slope_deg": 27,
+   "elevation_m": 2150,
+   "landslide_hist": 5,
+   "river": "",
+   "river_adjacent": false,
+   "no_network": true,
+   "note": "",
+   "met_zones": [
+    "SK"
+   ],
+   "geometry": [
+    [
+     88.664,
+     27.087
+    ],
+    [
+     88.61,
+     27.155
+    ]
+   ]
+  },
+  {
+   "id": "PDG-RNK",
+   "source": "PDG",
+   "target": "RNK",
+   "mode": "road",
+   "route_ref": "NH717A",
+   "road_class": "NH",
+   "terrain": "hill",
+   "length_km": 6.9,
+   "base_speed_kmh": 25,
+   "base_time_h": 0.28,
+   "slope_deg": 24,
+   "elevation_m": 1400,
+   "landslide_hist": 3,
+   "river": "",
+   "river_adjacent": false,
+   "no_network": false,
+   "note": "",
+   "met_zones": [
+    "SK"
+   ],
+   "geometry": [
+    [
+     88.61,
+     27.155
+    ],
+    [
+     88.645,
+     27.18
+    ]
+   ]
+  },
+  {
+   "id": "RNK-PKY",
+   "source": "RNK",
+   "target": "PKY",
+   "mode": "road",
+   "route_ref": "NH717A",
+   "road_class": "NH",
+   "terrain": "hill",
+   "length_km": 12.1,
+   "base_speed_kmh": 25,
+   "base_time_h": 0.48,
+   "slope_deg": 22,
+   "elevation_m": 1400,
+   "landslide_hist": 3,
+   "river": "",
+   "river_adjacent": false,
+   "no_network": false,
+   "note": "",
+   "met_zones": [
+    "SK"
+   ],
+   "geometry": [
+    [
+     88.645,
+     27.18
+    ],
+    [
+     88.59,
+     27.23
+    ]
+   ]
+  },
+  {
+   "id": "PKY-GTK",
+   "source": "PKY",
+   "target": "GTK",
+   "mode": "road",
+   "route_ref": "NH717A",
+   "road_class": "NH",
+   "terrain": "hill",
+   "length_km": 17.6,
+   "base_speed_kmh": 25,
+   "base_time_h": 0.7,
+   "slope_deg": 21,
+   "elevation_m": 1650,
+   "landslide_hist": 2,
+   "river": "",
+   "river_adjacent": false,
+   "no_network": false,
+   "note": "",
+   "met_zones": [
+    "SK"
+   ],
+   "geometry": [
+    [
+     88.59,
+     27.23
+    ],
+    [
+     88.612,
+     27.33
+    ]
+   ]
+  },
+  {
+   "id": "TBZ-KLP",
+   "source": "TBZ",
+   "target": "KLP",
+   "mode": "road",
+   "route_ref": "NH717",
+   "road_class": "NH",
+   "terrain": "hill",
+   "length_km": 5.4,
+   "base_speed_kmh": 25,
+   "base_time_h": 0.22,
+   "slope_deg": 28,
+   "elevation_m": 1250,
+   "landslide_hist": 8,
+   "river": "",
+   "river_adjacent": false,
+   "no_network": false,
+   "note": "",
+   "met_zones": [
+    "SK"
+   ],
+   "geometry": [
+    [
+     88.435,
+     27.064
+    ],
+    [
+     88.47,
+     27.06
+    ]
+   ]
+  },
+  {
+   "id": "KLP-PDG",
+   "source": "KLP",
+   "target": "PDG",
+   "mode": "road",
+   "route_ref": "SH",
+   "road_class": "SH",
+   "terrain": "hill",
+   "length_km": 27.0,
+   "base_speed_kmh": 20,
+   "base_time_h": 1.35,
+   "slope_deg": 26,
+   "elevation_m": 1400,
+   "landslide_hist": 5,
+   "river": "",
+   "river_adjacent": false,
+   "no_network": false,
+   "note": "Algarah road",
+   "met_zones": [
+    "SK"
+   ],
+   "geometry": [
+    [
+     88.47,
+     27.06
+    ],
+    [
+     88.61,
+     27.155
+    ]
+   ]
+  },
+  {
+   "id": "SLG-DHP",
+   "source": "SLG",
+   "target": "DHP",
+   "mode": "road",
+   "route_ref": "NH27",
+   "road_class": "NH",
+   "terrain": "plain",
+   "length_km": 78.7,
+   "base_speed_kmh": 45,
+   "base_time_h": 1.75,
+   "slope_deg": 2,
+   "elevation_m": 120,
+   "landslide_hist": 0,
+   "river": "Teesta",
+   "river_adjacent": true,
+   "no_network": false,
+   "note": "",
+   "met_zones": [
+    "NB"
+   ],
+   "geometry": [
+    [
+     88.395,
+     26.727
+    ],
+    [
+     89.01,
+     26.59
+    ]
+   ]
+  },
+  {
+   "id": "DHP-SRP",
+   "source": "DHP",
+   "target": "SRP",
+   "mode": "road",
+   "route_ref": "NH27",
+   "road_class": "NH",
+   "terrain": "plain",
+   "length_km": 116.3,
+   "base_speed_kmh": 45,
+   "base_time_h": 2.58,
+   "slope_deg": 2,
+   "elevation_m": 90,
+   "landslide_hist": 0,
+   "river": "Torsa",
+   "river_adjacent": true,
+   "no_network": false,
+   "note": "",
+   "met_zones": [
+    "LA",
+    "NB"
+   ],
+   "geometry": [
+    [
+     89.01,
+     26.59
+    ],
+    [
+     89.93,
+     26.44
+    ]
+   ]
+  },
+  {
+   "id": "SRP-BNG",
+   "source": "SRP",
+   "target": "BNG",
+   "mode": "road",
+   "route_ref": "NH27",
+   "road_class": "NH",
+   "terrain": "plain",
+   "length_km": 78.6,
+   "base_speed_kmh": 45,
+   "base_time_h": 1.75,
+   "slope_deg": 2,
+   "elevation_m": 60,
+   "landslide_hist": 0,
+   "river": "",
+   "river_adjacent": false,
+   "no_network": false,
+   "note": "",
+   "met_zones": [
+    "LA"
+   ],
+   "geometry": [
+    [
+     89.93,
+     26.44
+    ],
+    [
+     90.56,
+     26.48
+    ]
+   ]
+  },
+  {
+   "id": "BNG-GHY",
+   "source": "BNG",
+   "target": "GHY",
+   "mode": "road",
+   "route_ref": "NH27",
+   "road_class": "NH",
+   "terrain": "plain",
+   "length_km": 153.8,
+   "base_speed_kmh": 45,
+   "base_time_h": 3.42,
+   "slope_deg": 3,
+   "elevation_m": 60,
+   "landslide_hist": 0,
+   "river": "Brahmaputra",
+   "river_adjacent": true,
+   "no_network": false,
+   "note": "",
+   "met_zones": [
+    "LA"
+   ],
+   "geometry": [
+    [
+     90.56,
+     26.48
+    ],
+    [
+     91.736,
+     26.144
+    ]
+   ]
+  },
+  {
+   "id": "SRP-DHB",
+   "source": "SRP",
+   "target": "DHB",
+   "mode": "road",
+   "route_ref": "NH17",
+   "road_class": "NH",
+   "terrain": "plain",
+   "length_km": 58.7,
+   "base_speed_kmh": 45,
+   "base_time_h": 1.3,
+   "slope_deg": 2,
+   "elevation_m": 50,
+   "landslide_hist": 0,
+   "river": "Brahmaputra",
+   "river_adjacent": true,
+   "no_network": false,
+   "note": "",
+   "met_zones": [
+    "LA"
+   ],
+   "geometry": [
+    [
+     89.93,
+     26.44
+    ],
+    [
+     89.98,
+     26.02
+    ]
+   ]
+  },
+  {
+   "id": "DHB-HTS-ferry",
+   "source": "DHB",
+   "target": "HTS",
+   "mode": "ferry",
+   "route_ref": "IWAI NW-2",
+   "road_class": "FERRY",
+   "terrain": "plain",
+   "length_km": 18.4,
+   "base_speed_kmh": 10,
+   "base_time_h": 1.84,
+   "slope_deg": 0,
+   "elevation_m": 30,
+   "landslide_hist": 0,
+   "river": "Brahmaputra",
+   "river_adjacent": true,
+   "no_network": false,
+   "note": "Dhubri-Hatsingimari ro-ro ferry",
+   "met_zones": [
+    "GH",
+    "LA"
+   ],
+   "geometry": [
+    [
+     89.98,
+     26.02
+    ],
+    [
+     89.99,
+     25.87
+    ]
+   ]
+  },
+  {
+   "id": "HTS-TUR",
+   "source": "HTS",
+   "target": "TUR",
+   "mode": "road",
+   "route_ref": "NH127B",
+   "road_class": "NH",
+   "terrain": "hill",
+   "length_km": 71.6,
+   "base_speed_kmh": 25,
+   "base_time_h": 2.86,
+   "slope_deg": 13,
+   "elevation_m": 350,
+   "landslide_hist": 2,
+   "river": "",
+   "river_adjacent": false,
+   "no_network": false,
+   "note": "",
+   "met_zones": [
+    "GH"
+   ],
+   "geometry": [
+    [
+     89.99,
+     25.87
+    ],
+    [
+     90.22,
+     25.51
+    ]
+   ]
+  },
+  {
+   "id": "GHY-GLP",
+   "source": "GHY",
+   "target": "GLP",
+   "mode": "road",
+   "route_ref": "NH17",
+   "road_class": "NH",
+   "terrain": "plain",
+   "length_km": 139.3,
+   "base_speed_kmh": 45,
+   "base_time_h": 3.1,
+   "slope_deg": 3,
+   "elevation_m": 55,
+   "landslide_hist": 0,
+   "river": "Brahmaputra",
+   "river_adjacent": true,
+   "no_network": false,
+   "note": "",
+   "met_zones": [
+    "LA"
+   ],
+   "geometry": [
+    [
+     91.736,
+     26.144
+    ],
+    [
+     90.62,
+     26.17
+    ]
+   ]
+  },
+  {
+   "id": "GLP-TUR",
+   "source": "GLP",
+   "target": "TUR",
+   "mode": "road",
+   "route_ref": "NH217",
+   "road_class": "NH",
+   "terrain": "hill",
+   "length_km": 129.6,
+   "base_speed_kmh": 25,
+   "base_time_h": 5.18,
+   "slope_deg": 17,
+   "elevation_m": 350,
+   "landslide_hist": 4,
+   "river": "",
+   "river_adjacent": false,
+   "no_network": false,
+   "note": "",
+   "met_zones": [
+    "GH",
+    "LA"
+   ],
+   "geometry": [
+    [
+     90.62,
+     26.17
+    ],
+    [
+     90.22,
+     25.51
+    ]
+   ]
+  },
+  {
+   "id": "GHY-JRB",
+   "source": "GHY",
+   "target": "JRB",
+   "mode": "road",
+   "route_ref": "NH27",
+   "road_class": "NH",
+   "terrain": "plain",
+   "length_km": 16.3,
+   "base_speed_kmh": 45,
+   "base_time_h": 0.36,
+   "slope_deg": 4,
+   "elevation_m": 60,
+   "landslide_hist": 1,
+   "river": "",
+   "river_adjacent": false,
+   "no_network": false,
+   "note": "Guwahati city traffic",
+   "met_zones": [
+    "LA"
+   ],
+   "geometry": [
+    [
+     91.736,
+     26.144
+    ],
+    [
+     91.86,
+     26.107
+    ]
+   ]
+  },
+  {
+   "id": "JRB-NGP",
+   "source": "JRB",
+   "target": "NGP",
+   "mode": "road",
+   "route_ref": "NH6",
+   "road_class": "NH",
+   "terrain": "hill",
+   "length_km": 35.8,
+   "base_speed_kmh": 25,
+   "base_time_h": 1.43,
+   "slope_deg": 15,
+   "elevation_m": 500,
+   "landslide_hist": 4,
+   "river": "",
+   "river_adjacent": false,
+   "no_network": false,
+   "note": "",
+   "met_zones": [
+    "LA",
+    "ML"
+   ],
+   "geometry": [
+    [
+     91.86,
+     26.107
+    ],
+    [
+     91.88,
+     25.9
+    ]
+   ]
+  },
+  {
+   "id": "NGP-UMI",
+   "source": "NGP",
+   "target": "UMI",
+   "mode": "road",
+   "route_ref": "NH6",
+   "road_class": "NH",
+   "terrain": "hill",
+   "length_km": 39.7,
+   "base_speed_kmh": 25,
+   "base_time_h": 1.59,
+   "slope_deg": 20,
+   "elevation_m": 1000,
+   "landslide_hist": 6,
+   "river": "",
+   "river_adjacent": false,
+   "no_network": false,
+   "note": "",
+   "met_zones": [
+    "ML"
+   ],
+   "geometry": [
+    [
+     91.88,
+     25.9
+    ],
+    [
+     91.89,
+     25.67
+    ]
+   ]
+  },
+  {
+   "id": "UMI-SHL",
+   "source": "UMI",
+   "target": "SHL",
+   "mode": "road",
+   "route_ref": "NH6",
+   "road_class": "NH",
+   "terrain": "hill",
+   "length_km": 17.3,
+   "base_speed_kmh": 25,
+   "base_time_h": 0.69,
+   "slope_deg": 18,
+   "elevation_m": 1500,
+   "landslide_hist": 5,
+   "river": "",
+   "river_adjacent": false,
+   "no_network": false,
+   "note": "",
+   "met_zones": [
+    "ML"
+   ],
+   "geometry": [
+    [
+     91.89,
+     25.67
+    ],
+    [
+     91.88,
+     25.57
+    ]
+   ]
+  },
+  {
+   "id": "SHL-JWI",
+   "source": "SHL",
+   "target": "JWI",
+   "mode": "road",
+   "route_ref": "NH6",
+   "road_class": "NH",
+   "terrain": "hill",
+   "length_km": 53.9,
+   "base_speed_kmh": 25,
+   "base_time_h": 2.16,
+   "slope_deg": 16,
+   "elevation_m": 1500,
+   "landslide_hist": 3,
+   "river": "",
+   "river_adjacent": false,
+   "no_network": false,
+   "note": "",
+   "met_zones": [
+    "ML"
+   ],
+   "geometry": [
+    [
+     91.88,
+     25.57
+    ],
+    [
+     92.2,
+     25.45
+    ]
+   ]
+  },
+  {
+   "id": "JWI-KHL",
+   "source": "JWI",
+   "target": "KHL",
+   "mode": "road",
+   "route_ref": "NH6",
+   "road_class": "NH",
+   "terrain": "hill",
+   "length_km": 30.7,
+   "base_speed_kmh": 25,
+   "base_time_h": 1.23,
+   "slope_deg": 19,
+   "elevation_m": 1380,
+   "landslide_hist": 5,
+   "river": "",
+   "river_adjacent": false,
+   "no_network": false,
+   "note": "",
+   "met_zones": [
+    "ML"
+   ],
+   "geometry": [
+    [
+     92.2,
+     25.45
+    ],
+    [
+     92.37,
+     25.36
+    ]
+   ]
+  },
+  {
+   "id": "KHL-SNP",
+   "source": "KHL",
+   "target": "SNP",
+   "mode": "road",
+   "route_ref": "NH6",
+   "road_class": "NH",
+   "terrain": "mountain",
+   "length_km": 46.0,
+   "base_speed_kmh": 18,
+   "base_time_h": 2.55,
+   "slope_deg": 34,
+   "elevation_m": 1200,
+   "landslide_hist": 22,
+   "river": "Lubha",
+   "river_adjacent": true,
+   "no_network": true,
+   "note": "Sonapur tunnel approaches - chronic slides",
+   "met_zones": [
+    "ML"
+   ],
+   "geometry": [
+    [
+     92.37,
+     25.36
+    ],
+    [
+     92.43,
+     25.13
+    ]
+   ]
+  },
+  {
+   "id": "SNP-RTC",
+   "source": "SNP",
+   "target": "RTC",
+   "mode": "road",
+   "route_ref": "NH6",
+   "road_class": "NH",
+   "terrain": "hill",
+   "length_km": 27.9,
+   "base_speed_kmh": 25,
+   "base_time_h": 1.12,
+   "slope_deg": 27,
+   "elevation_m": 600,
+   "landslide_hist": 11,
+   "river": "",
+   "river_adjacent": false,
+   "no_network": false,
+   "note": "",
+   "met_zones": [
+    "BV",
+    "ML"
+   ],
+   "geometry": [
+    [
+     92.43,
+     25.13
+    ],
+    [
+     92.52,
+     24.99
+    ]
+   ]
+  },
+  {
+   "id": "RTC-BDP",
+   "source": "RTC",
+   "target": "BDP",
+   "mode": "road",
+   "route_ref": "NH6",
+   "road_class": "NH",
+   "terrain": "plain",
+   "length_km": 19.4,
+   "base_speed_kmh": 45,
+   "base_time_h": 0.43,
+   "slope_deg": 5,
+   "elevation_m": 60,
+   "landslide_hist": 1,
+   "river": "Barak",
+   "river_adjacent": true,
+   "no_network": false,
+   "note": "",
+   "met_zones": [
+    "BV"
+   ],
+   "geometry": [
+    [
+     92.52,
+     24.99
+    ],
+    [
+     92.595,
+     24.868
+    ]
+   ]
+  },
+  {
+   "id": "BDP-SCR",
+   "source": "BDP",
+   "target": "SCR",
+   "mode": "road",
+   "route_ref": "NH37",
+   "road_class": "NH",
+   "terrain": "plain",
+   "length_km": 26.1,
+   "base_speed_kmh": 45,
+   "base_time_h": 0.58,
+   "slope_deg": 3,
+   "elevation_m": 22,
+   "landslide_hist": 0,
+   "river": "Barak",
+   "river_adjacent": true,
+   "no_network": false,
+   "note": "",
+   "met_zones": [
+    "BV"
+   ],
+   "geometry": [
+    [
+     92.595,
+     24.868
+    ],
+    [
+     92.797,
+     24.827
+    ]
+   ]
+  },
+  {
+   "id": "BDP-KMJ",
+   "source": "BDP",
+   "target": "KMJ",
+   "mode": "road",
+   "route_ref": "NH8",
+   "road_class": "NH",
+   "terrain": "plain",
+   "length_km": 29.6,
+   "base_speed_kmh": 45,
+   "base_time_h": 0.66,
+   "slope_deg": 3,
+   "elevation_m": 20,
+   "landslide_hist": 0,
+   "river": "Kushiyara",
+   "river_adjacent": true,
+   "no_network": false,
+   "note": "",
+   "met_zones": [
+    "BV"
+   ],
+   "geometry": [
+    [
+     92.595,
+     24.868
+    ],
+    [
+     92.36,
+     24.87
+    ]
+   ]
+  },
+  {
+   "id": "JRB-NGN",
+   "source": "JRB",
+   "target": "NGN",
+   "mode": "road",
+   "route_ref": "NH27",
+   "road_class": "NH",
+   "terrain": "plain",
+   "length_km": 107.7,
+   "base_speed_kmh": 45,
+   "base_time_h": 2.39,
+   "slope_deg": 3,
+   "elevation_m": 60,
+   "landslide_hist": 0,
+   "river": "",
+   "river_adjacent": false,
+   "no_network": false,
+   "note": "",
+   "met_zones": [
+    "CA",
+    "LA"
+   ],
+   "geometry": [
+    [
+     91.86,
+     26.107
+    ],
+    [
+     92.68,
+     26.35
+    ]
+   ]
+  },
+  {
+   "id": "NGN-LNK",
+   "source": "NGN",
+   "target": "LNK",
+   "mode": "road",
+   "route_ref": "NH27",
+   "road_class": "NH",
+   "terrain": "plain",
+   "length_km": 67.4,
+   "base_speed_kmh": 45,
+   "base_time_h": 1.5,
+   "slope_deg": 5,
+   "elevation_m": 80,
+   "landslide_hist": 1,
+   "river": "Kopili",
+   "river_adjacent": true,
+   "no_network": false,
+   "note": "",
+   "met_zones": [
+    "CA"
+   ],
+   "geometry": [
+    [
+     92.68,
+     26.35
+    ],
+    [
+     92.95,
+     25.93
+    ]
+   ]
+  },
+  {
+   "id": "LNK-MBG",
+   "source": "LNK",
+   "target": "MBG",
+   "mode": "road",
+   "route_ref": "NH27",
+   "road_class": "NH",
+   "terrain": "hill",
+   "length_km": 112.1,
+   "base_speed_kmh": 25,
+   "base_time_h": 4.49,
+   "slope_deg": 18,
+   "elevation_m": 350,
+   "landslide_hist": 6,
+   "river": "Kopili",
+   "river_adjacent": true,
+   "no_network": false,
+   "note": "",
+   "met_zones": [
+    "CA",
+    "DH"
+   ],
+   "geometry": [
+    [
+     92.95,
+     25.93
+    ],
+    [
+     93.13,
+     25.3
+    ]
+   ]
+  },
+  {
+   "id": "MBG-HRJ",
+   "source": "MBG",
+   "target": "HRJ",
+   "mode": "road",
+   "route_ref": "NH27",
+   "road_class": "NH",
+   "terrain": "mountain",
+   "length_km": 60.1,
+   "base_speed_kmh": 18,
+   "base_time_h": 3.34,
+   "slope_deg": 32,
+   "elevation_m": 600,
+   "landslide_hist": 24,
+   "river": "Jatinga",
+   "river_adjacent": true,
+   "no_network": true,
+   "note": "Dima Hasao - May 2022 cluster; cut NH27 and rail",
+   "met_zones": [
+    "DH"
+   ],
+   "geometry": [
+    [
+     93.13,
+     25.3
+    ],
+    [
+     92.87,
+     25.1
+    ]
+   ]
+  },
+  {
+   "id": "HRJ-BLC",
+   "source": "HRJ",
+   "target": "BLC",
+   "mode": "road",
+   "route_ref": "NH27",
+   "road_class": "NH",
+   "terrain": "hill",
+   "length_km": 24.3,
+   "base_speed_kmh": 25,
+   "base_time_h": 0.97,
+   "slope_deg": 28,
+   "elevation_m": 600,
+   "landslide_hist": 15,
+   "river": "Jatinga",
+   "river_adjacent": true,
+   "no_network": true,
+   "note": "Jatinga descent",
+   "met_zones": [
+    "BV",
+    "DH"
+   ],
+   "geometry": [
+    [
+     92.87,
+     25.1
+    ],
+    [
+     92.85,
+     24.96
+    ]
+   ]
+  },
+  {
+   "id": "BLC-SCR",
+   "source": "BLC",
+   "target": "SCR",
+   "mode": "road",
+   "route_ref": "NH27",
+   "road_class": "NH",
+   "terrain": "plain",
+   "length_km": 19.7,
+   "base_speed_kmh": 45,
+   "base_time_h": 0.44,
+   "slope_deg": 4,
+   "elevation_m": 50,
+   "landslide_hist": 1,
+   "river": "Barak",
+   "river_adjacent": true,
+   "no_network": false,
+   "note": "",
+   "met_zones": [
+    "BV"
+   ],
+   "geometry": [
+    [
+     92.85,
+     24.96
+    ],
+    [
+     92.797,
+     24.827
+    ]
+   ]
+  },
+  {
+   "id": "NGN-DBK",
+   "source": "NGN",
+   "target": "DBK",
+   "mode": "road",
+   "route_ref": "NH27",
+   "road_class": "NH",
+   "terrain": "plain",
+   "length_km": 46.7,
+   "base_speed_kmh": 45,
+   "base_time_h": 1.04,
+   "slope_deg": 3,
+   "elevation_m": 70,
+   "landslide_hist": 0,
+   "river": "",
+   "river_adjacent": false,
+   "no_network": false,
+   "note": "",
+   "met_zones": [
+    "CA"
+   ],
+   "geometry": [
+    [
+     92.68,
+     26.35
+    ],
+    [
+     92.93,
+     26.1
+    ]
+   ]
+  },
+  {
+   "id": "DBK-BKJ",
+   "source": "DBK",
+   "target": "BKJ",
+   "mode": "road",
+   "route_ref": "NH29",
+   "road_class": "NH",
+   "terrain": "plain",
+   "length_km": 105.5,
+   "base_speed_kmh": 45,
+   "base_time_h": 2.34,
+   "slope_deg": 5,
+   "elevation_m": 120,
+   "landslide_hist": 1,
+   "river": "Dhansiri",
+   "river_adjacent": true,
+   "no_network": false,
+   "note": "",
+   "met_zones": [
+    "CA"
+   ],
+   "geometry": [
+    [
+     92.93,
+     26.1
+    ],
+    [
+     93.77,
+     26.02
+    ]
+   ]
+  },
+  {
+   "id": "BKJ-DMR",
+   "source": "BKJ",
+   "target": "DMR",
+   "mode": "road",
+   "route_ref": "NH29",
+   "road_class": "NH",
+   "terrain": "plain",
+   "length_km": 16.7,
+   "base_speed_kmh": 45,
+   "base_time_h": 0.37,
+   "slope_deg": 4,
+   "elevation_m": 150,
+   "landslide_hist": 0,
+   "river": "Dhansiri",
+   "river_adjacent": true,
+   "no_network": false,
+   "note": "",
+   "met_zones": [
+    "CA",
+    "NL"
+   ],
+   "geometry": [
+    [
+     93.77,
+     26.02
+    ],
+    [
+     93.727,
+     25.906
+    ]
+   ]
+  },
+  {
+   "id": "NGN-KLB",
+   "source": "NGN",
+   "target": "KLB",
+   "mode": "road",
+   "route_ref": "NH715",
+   "road_class": "NH",
+   "terrain": "plain",
+   "length_km": 47.6,
+   "base_speed_kmh": 45,
+   "base_time_h": 1.06,
+   "slope_deg": 2,
+   "elevation_m": 70,
+   "landslide_hist": 0,
+   "river": "Brahmaputra",
+   "river_adjacent": true,
+   "no_network": false,
+   "note": "",
+   "met_zones": [
+    "CA"
+   ],
+   "geometry": [
+    [
+     92.68,
+     26.35
+    ],
+    [
+     92.99,
+     26.55
+    ]
+   ]
+  },
+  {
+   "id": "KLB-TZP",
+   "source": "KLB",
+   "target": "TZP",
+   "mode": "road",
+   "route_ref": "NH715",
+   "road_class": "NH",
+   "terrain": "plain",
+   "length_km": 26.1,
+   "base_speed_kmh": 45,
+   "base_time_h": 0.58,
+   "slope_deg": 2,
+   "elevation_m": 80,
+   "landslide_hist": 0,
+   "river": "Brahmaputra",
+   "river_adjacent": true,
+   "no_network": false,
+   "note": "Kolia Bhomora bridge",
+   "met_zones": [
+    "CA",
+    "NBK"
+   ],
+   "geometry": [
+    [
+     92.99,
+     26.55
+    ],
+    [
+     92.8,
+     26.63
+    ]
+   ]
+  },
+  {
+   "id": "KLB-KZR",
+   "source": "KLB",
+   "target": "KZR",
+   "mode": "road",
+   "route_ref": "NH715",
+   "road_class": "NH",
+   "terrain": "plain",
+   "length_km": 76.8,
+   "base_speed_kmh": 45,
+   "base_time_h": 1.71,
+   "slope_deg": 2,
+   "elevation_m": 80,
+   "landslide_hist": 0,
+   "river": "Brahmaputra",
+   "river_adjacent": true,
+   "no_network": false,
+   "note": "Kaziranga flood stretch; animal-corridor speed limits",
+   "met_zones": [
+    "CA",
+    "UA"
+   ],
+   "geometry": [
+    [
+     92.99,
+     26.55
+    ],
+    [
+     93.6,
+     26.64
+    ]
+   ]
+  },
+  {
+   "id": "KZR-JRT",
+   "source": "KZR",
+   "target": "JRT",
+   "mode": "road",
+   "route_ref": "NH715",
+   "road_class": "NH",
+   "terrain": "plain",
+   "length_km": 76.1,
+   "base_speed_kmh": 45,
+   "base_time_h": 1.69,
+   "slope_deg": 2,
+   "elevation_m": 100,
+   "landslide_hist": 0,
+   "river": "Dhansiri",
+   "river_adjacent": true,
+   "no_network": false,
+   "note": "",
+   "met_zones": [
+    "UA"
+   ],
+   "geometry": [
+    [
+     93.6,
+     26.64
+    ],
+    [
+     94.2,
+     26.75
+    ]
+   ]
+  },
+  {
+   "id": "DMR-GLG",
+   "source": "DMR",
+   "target": "GLG",
+   "mode": "road",
+   "route_ref": "NH129",
+   "road_class": "NH",
+   "terrain": "plain",
+   "length_km": 90.6,
+   "base_speed_kmh": 45,
+   "base_time_h": 2.01,
+   "slope_deg": 3,
+   "elevation_m": 150,
+   "landslide_hist": 0,
+   "river": "Dhansiri",
+   "river_adjacent": true,
+   "no_network": false,
+   "note": "",
+   "met_zones": [
+    "NL",
+    "UA"
+   ],
+   "geometry": [
+    [
+     93.727,
+     25.906
+    ],
+    [
+     93.97,
+     26.52
+    ]
+   ]
+  },
+  {
+   "id": "GLG-JRT",
+   "source": "GLG",
+   "target": "JRT",
+   "mode": "road",
+   "route_ref": "NH715",
+   "road_class": "NH",
+   "terrain": "plain",
+   "length_km": 42.9,
+   "base_speed_kmh": 45,
+   "base_time_h": 0.95,
+   "slope_deg": 2,
+   "elevation_m": 100,
+   "landslide_hist": 0,
+   "river": "",
+   "river_adjacent": false,
+   "no_network": false,
+   "note": "",
+   "met_zones": [
+    "UA"
+   ],
+   "geometry": [
+    [
+     93.97,
+     26.52
+    ],
+    [
+     94.2,
+     26.75
+    ]
+   ]
+  },
+  {
+   "id": "JRT-SVS",
+   "source": "JRT",
+   "target": "SVS",
+   "mode": "road",
+   "route_ref": "NH715",
+   "road_class": "NH",
+   "terrain": "plain",
+   "length_km": 63.2,
+   "base_speed_kmh": 45,
+   "base_time_h": 1.41,
+   "slope_deg": 2,
+   "elevation_m": 100,
+   "landslide_hist": 0,
+   "river": "",
+   "river_adjacent": false,
+   "no_network": false,
+   "note": "",
+   "met_zones": [
+    "UA"
+   ],
+   "geometry": [
+    [
+     94.2,
+     26.75
+    ],
+    [
+     94.64,
+     26.98
+    ]
+   ]
+  },
+  {
+   "id": "SVS-DBR",
+   "source": "SVS",
+   "target": "DBR",
+   "mode": "road",
+   "route_ref": "NH37",
+   "road_class": "NH",
+   "terrain": "plain",
+   "length_km": 75.8,
+   "base_speed_kmh": 45,
+   "base_time_h": 1.69,
+   "slope_deg": 2,
+   "elevation_m": 110,
+   "landslide_hist": 0,
+   "river": "Brahmaputra",
+   "river_adjacent": true,
+   "no_network": false,
+   "note": "",
+   "met_zones": [
+    "UA"
+   ],
+   "geometry": [
+    [
+     94.64,
+     26.98
+    ],
+    [
+     94.91,
+     27.47
+    ]
+   ]
+  },
+  {
+   "id": "JRT-NMT",
+   "source": "JRT",
+   "target": "NMT",
+   "mode": "road",
+   "route_ref": "ODR",
+   "road_class": "ODR",
+   "terrain": "plain",
+   "length_km": 12.7,
+   "base_speed_kmh": 25,
+   "base_time_h": 0.51,
+   "slope_deg": 1,
+   "elevation_m": 100,
+   "landslide_hist": 0,
+   "river": "Brahmaputra",
+   "river_adjacent": true,
+   "no_network": false,
+   "note": "",
+   "met_zones": [
+    "UA"
+   ],
+   "geometry": [
+    [
+     94.2,
+     26.75
+    ],
+    [
+     94.25,
+     26.83
+    ]
+   ]
+  },
+  {
+   "id": "NMT-KMB-ferry",
+   "source": "NMT",
+   "target": "KMB",
+   "mode": "ferry",
+   "route_ref": "IWAI NW-2",
+   "road_class": "FERRY",
+   "terrain": "plain",
+   "length_km": 17.1,
+   "base_speed_kmh": 10,
+   "base_time_h": 1.71,
+   "slope_deg": 0,
+   "elevation_m": 90,
+   "landslide_hist": 0,
+   "river": "Brahmaputra",
+   "river_adjacent": true,
+   "no_network": false,
+   "note": "Neamati-Majuli ferry",
+   "met_zones": [
+    "UA"
+   ],
+   "geometry": [
+    [
+     94.25,
+     26.83
+    ],
+    [
+     94.17,
+     26.95
+    ]
+   ]
+  },
+  {
+   "id": "DMR-CHM",
+   "source": "DMR",
+   "target": "CHM",
+   "mode": "road",
+   "route_ref": "NH29",
+   "road_class": "NH",
+   "terrain": "plain",
+   "length_km": 17.4,
+   "base_speed_kmh": 45,
+   "base_time_h": 0.39,
+   "slope_deg": 6,
+   "elevation_m": 200,
+   "landslide_hist": 1,
+   "river": "",
+   "river_adjacent": false,
+   "no_network": false,
+   "note": "",
+   "met_zones": [
+    "NL"
+   ],
+   "geometry": [
+    [
+     93.727,
+     25.906
+    ],
+    [
+     93.78,
+     25.79
+    ]
+   ]
+  },
+  {
+   "id": "CHM-PPH",
+   "source": "CHM",
+   "target": "PPH",
+   "mode": "road",
+   "route_ref": "NH29",
+   "road_class": "NH",
+   "terrain": "hill",
+   "length_km": 25.5,
+   "base_speed_kmh": 25,
+   "base_time_h": 1.02,
+   "slope_deg": 30,
+   "elevation_m": 500,
+   "landslide_hist": 18,
+   "river": "",
+   "river_adjacent": false,
+   "no_network": true,
+   "note": "Pagla Pahar - recurring sinking & slides",
+   "met_zones": [
+    "NL"
+   ],
+   "geometry": [
+    [
+     93.78,
+     25.79
+    ],
+    [
+     93.93,
+     25.73
+    ]
+   ]
+  },
+  {
+   "id": "PPH-KOH",
+   "source": "PPH",
+   "target": "KOH",
+   "mode": "road",
+   "route_ref": "NH29",
+   "road_class": "NH",
+   "terrain": "hill",
+   "length_km": 29.8,
+   "base_speed_kmh": 25,
+   "base_time_h": 1.19,
+   "slope_deg": 27,
+   "elevation_m": 1440,
+   "landslide_hist": 11,
+   "river": "",
+   "river_adjacent": false,
+   "no_network": false,
+   "note": "",
+   "met_zones": [
+    "NL"
+   ],
+   "geometry": [
+    [
+     93.93,
+     25.73
+    ],
+    [
+     94.11,
+     25.67
+    ]
+   ]
+  },
+  {
+   "id": "KOH-MAO",
+   "source": "KOH",
+   "target": "MAO",
+   "mode": "road",
+   "route_ref": "NH2",
+   "road_class": "NH",
+   "terrain": "mountain",
+   "length_km": 29.7,
+   "base_speed_kmh": 18,
+   "base_time_h": 1.65,
+   "slope_deg": 25,
+   "elevation_m": 1800,
+   "landslide_hist": 8,
+   "river": "",
+   "river_adjacent": false,
+   "no_network": false,
+   "note": "Mao gate - blockades & slides",
+   "met_zones": [
+    "MN",
+    "NL"
+   ],
+   "geometry": [
+    [
+     94.11,
+     25.67
+    ],
+    [
+     94.14,
+     25.52
+    ]
+   ]
+  },
+  {
+   "id": "MAO-SPT",
+   "source": "MAO",
+   "target": "SPT",
+   "mode": "road",
+   "route_ref": "NH2",
+   "road_class": "NH",
+   "terrain": "hill",
+   "length_km": 47.0,
+   "base_speed_kmh": 25,
+   "base_time_h": 1.88,
+   "slope_deg": 22,
+   "elevation_m": 1800,
+   "landslide_hist": 6,
+   "river": "",
+   "river_adjacent": false,
+   "no_network": false,
+   "note": "",
+   "met_zones": [
+    "MN"
+   ],
+   "geometry": [
+    [
+     94.14,
+     25.52
+    ],
+    [
+     94.02,
+     25.27
+    ]
+   ]
+  },
+  {
+   "id": "SPT-KGK",
+   "source": "SPT",
+   "target": "KGK",
+   "mode": "road",
+   "route_ref": "NH2",
+   "road_class": "NH",
+   "terrain": "hill",
+   "length_km": 23.7,
+   "base_speed_kmh": 25,
+   "base_time_h": 0.95,
+   "slope_deg": 20,
+   "elevation_m": 1100,
+   "landslide_hist": 5,
+   "river": "",
+   "river_adjacent": false,
+   "no_network": false,
+   "note": "",
+   "met_zones": [
+    "MN"
+   ],
+   "geometry": [
+    [
+     94.02,
+     25.27
+    ],
+    [
+     93.97,
+     25.14
+    ]
+   ]
+  },
+  {
+   "id": "KGK-IMP",
+   "source": "KGK",
+   "target": "IMP",
+   "mode": "road",
+   "route_ref": "NH2",
+   "road_class": "NH",
+   "terrain": "hill",
+   "length_km": 57.1,
+   "base_speed_kmh": 25,
+   "base_time_h": 2.28,
+   "slope_deg": 14,
+   "elevation_m": 1000,
+   "landslide_hist": 3,
+   "river": "",
+   "river_adjacent": false,
+   "no_network": false,
+   "note": "",
+   "met_zones": [
+    "MN"
+   ],
+   "geometry": [
+    [
+     93.97,
+     25.14
+    ],
+    [
+     93.94,
+     24.81
+    ]
+   ]
+  },
+  {
+   "id": "SCR-JRI",
+   "source": "SCR",
+   "target": "JRI",
+   "mode": "road",
+   "route_ref": "NH37",
+   "road_class": "NH",
+   "terrain": "plain",
+   "length_km": 40.9,
+   "base_speed_kmh": 45,
+   "base_time_h": 0.91,
+   "slope_deg": 6,
+   "elevation_m": 40,
+   "landslide_hist": 2,
+   "river": "Barak",
+   "river_adjacent": true,
+   "no_network": false,
+   "note": "",
+   "met_zones": [
+    "BV"
+   ],
+   "geometry": [
+    [
+     92.797,
+     24.827
+    ],
+    [
+     93.12,
+     24.8
+    ]
+   ]
+  },
+  {
+   "id": "JRI-NGB",
+   "source": "JRI",
+   "target": "NGB",
+   "mode": "road",
+   "route_ref": "NH37",
+   "road_class": "NH",
+   "terrain": "mountain",
+   "length_km": 55.1,
+   "base_speed_kmh": 18,
+   "base_time_h": 3.06,
+   "slope_deg": 31,
+   "elevation_m": 400,
+   "landslide_hist": 17,
+   "river": "Irang",
+   "river_adjacent": true,
+   "no_network": true,
+   "note": "",
+   "met_zones": [
+    "BV",
+    "MN"
+   ],
+   "geometry": [
+    [
+     93.12,
+     24.8
+    ],
+    [
+     93.43,
+     24.77
+    ]
+   ]
+  },
+  {
+   "id": "NGB-NNY",
+   "source": "NGB",
+   "target": "NNY",
+   "mode": "road",
+   "route_ref": "NH37",
+   "road_class": "NH",
+   "terrain": "mountain",
+   "length_km": 36.3,
+   "base_speed_kmh": 18,
+   "base_time_h": 2.02,
+   "slope_deg": 33,
+   "elevation_m": 800,
+   "landslide_hist": 21,
+   "river": "Ijei",
+   "river_adjacent": true,
+   "no_network": true,
+   "note": "Noney - repeated NH37 cuts",
+   "met_zones": [
+    "MN"
+   ],
+   "geometry": [
+    [
+     93.43,
+     24.77
+    ],
+    [
+     93.61,
+     24.86
+    ]
+   ]
+  },
+  {
+   "id": "NNY-IMP",
+   "source": "NNY",
+   "target": "IMP",
+   "mode": "road",
+   "route_ref": "NH37",
+   "road_class": "NH",
+   "terrain": "hill",
+   "length_km": 52.3,
+   "base_speed_kmh": 25,
+   "base_time_h": 2.09,
+   "slope_deg": 24,
+   "elevation_m": 800,
+   "landslide_hist": 9,
+   "river": "",
+   "river_adjacent": false,
+   "no_network": false,
+   "note": "",
+   "met_zones": [
+    "MN"
+   ],
+   "geometry": [
+    [
+     93.61,
+     24.86
+    ],
+    [
+     93.94,
+     24.81
+    ]
+   ]
+  },
+  {
+   "id": "SCR-VRT",
+   "source": "SCR",
+   "target": "VRT",
+   "mode": "road",
+   "route_ref": "NH306",
+   "road_class": "NH",
+   "terrain": "plain",
+   "length_km": 45.8,
+   "base_speed_kmh": 45,
+   "base_time_h": 1.02,
+   "slope_deg": 8,
+   "elevation_m": 100,
+   "landslide_hist": 3,
+   "river": "Dhaleswari",
+   "river_adjacent": true,
+   "no_network": false,
+   "note": "",
+   "met_zones": [
+    "BV",
+    "MZ"
+   ],
+   "geometry": [
+    [
+     92.797,
+     24.827
+    ],
+    [
+     92.75,
+     24.5
+    ]
+   ]
+  },
+  {
+   "id": "VRT-KLS",
+   "source": "VRT",
+   "target": "KLS",
+   "mode": "road",
+   "route_ref": "NH306",
+   "road_class": "NH",
+   "terrain": "hill",
+   "length_km": 49.5,
+   "base_speed_kmh": 25,
+   "base_time_h": 1.98,
+   "slope_deg": 26,
+   "elevation_m": 600,
+   "landslide_hist": 12,
+   "river": "",
+   "river_adjacent": false,
+   "no_network": false,
+   "note": "",
+   "met_zones": [
+    "MZ"
+   ],
+   "geometry": [
+    [
+     92.75,
+     24.5
+    ],
+    [
+     92.68,
+     24.22
+    ]
+   ]
+  },
+  {
+   "id": "KLS-AZL",
+   "source": "KLS",
+   "target": "AZL",
+   "mode": "road",
+   "route_ref": "NH306",
+   "road_class": "NH",
+   "terrain": "hill",
+   "length_km": 84.7,
+   "base_speed_kmh": 25,
+   "base_time_h": 3.39,
+   "slope_deg": 30,
+   "elevation_m": 1100,
+   "landslide_hist": 16,
+   "river": "Tlawng",
+   "river_adjacent": true,
+   "no_network": true,
+   "note": "NH306 sinking zones",
+   "met_zones": [
+    "MZ"
+   ],
+   "geometry": [
+    [
+     92.68,
+     24.22
+    ],
+    [
+     92.72,
+     23.73
+    ]
+   ]
+  },
+  {
+   "id": "SRG-AZL",
+   "source": "SRG",
+   "target": "AZL",
+   "mode": "road",
+   "route_ref": "NH306",
+   "road_class": "NH",
+   "terrain": "hill",
+   "length_km": 16.7,
+   "base_speed_kmh": 25,
+   "base_time_h": 0.67,
+   "slope_deg": 22,
+   "elevation_m": 1100,
+   "landslide_hist": 5,
+   "river": "",
+   "river_adjacent": false,
+   "no_network": false,
+   "note": "Sairang railhead to Aizawl",
+   "met_zones": [
+    "MZ"
+   ],
+   "geometry": [
+    [
+     92.66,
+     23.81
+    ],
+    [
+     92.72,
+     23.73
+    ]
+   ]
+  },
+  {
+   "id": "KMJ-CHB",
+   "source": "KMJ",
+   "target": "CHB",
+   "mode": "road",
+   "route_ref": "NH8",
+   "road_class": "NH",
+   "terrain": "plain",
+   "length_km": 63.3,
+   "base_speed_kmh": 45,
+   "base_time_h": 1.41,
+   "slope_deg": 5,
+   "elevation_m": 30,
+   "landslide_hist": 1,
+   "river": "",
+   "river_adjacent": false,
+   "no_network": false,
+   "note": "",
+   "met_zones": [
+    "BV",
+    "TR"
+   ],
+   "geometry": [
+    [
+     92.36,
+     24.87
+    ],
+    [
+     92.23,
+     24.43
+    ]
+   ]
+  },
+  {
+   "id": "CHB-DMN",
+   "source": "CHB",
+   "target": "DMN",
+   "mode": "road",
+   "route_ref": "NH8",
+   "road_class": "NH",
+   "terrain": "plain",
+   "length_km": 11.3,
+   "base_speed_kmh": 45,
+   "base_time_h": 0.25,
+   "slope_deg": 4,
+   "elevation_m": 30,
+   "landslide_hist": 0,
+   "river": "",
+   "river_adjacent": false,
+   "no_network": false,
+   "note": "",
+   "met_zones": [
+    "TR"
+   ],
+   "geometry": [
+    [
+     92.23,
+     24.43
+    ],
+    [
+     92.17,
+     24.37
+    ]
+   ]
+  },
+  {
+   "id": "DMN-KMG",
+   "source": "DMN",
+   "target": "KMG",
+   "mode": "road",
+   "route_ref": "NH8",
+   "road_class": "NH",
+   "terrain": "plain",
+   "length_km": 34.2,
+   "base_speed_kmh": 45,
+   "base_time_h": 0.76,
+   "slope_deg": 6,
+   "elevation_m": 30,
+   "landslide_hist": 1,
+   "river": "Manu",
+   "river_adjacent": true,
+   "no_network": false,
+   "note": "",
+   "met_zones": [
+    "TR"
+   ],
+   "geometry": [
+    [
+     92.17,
+     24.37
+    ],
+    [
+     92.03,
+     24.16
+    ]
+   ]
+  },
+  {
+   "id": "KMG-AMB",
+   "source": "KMG",
+   "target": "AMB",
+   "mode": "road",
+   "route_ref": "NH8",
+   "road_class": "NH",
+   "terrain": "hill",
+   "length_km": 48.7,
+   "base_speed_kmh": 25,
+   "base_time_h": 1.95,
+   "slope_deg": 19,
+   "elevation_m": 400,
+   "landslide_hist": 6,
+   "river": "",
+   "river_adjacent": false,
+   "no_network": false,
+   "note": "Atharamura range",
+   "met_zones": [
+    "TR"
+   ],
+   "geometry": [
+    [
+     92.03,
+     24.16
+    ],
+    [
+     91.85,
+     23.93
+    ]
+   ]
+  },
+  {
+   "id": "AMB-TLM",
+   "source": "AMB",
+   "target": "TLM",
+   "mode": "road",
+   "route_ref": "NH8",
+   "road_class": "NH",
+   "terrain": "hill",
+   "length_km": 38.0,
+   "base_speed_kmh": 25,
+   "base_time_h": 1.52,
+   "slope_deg": 22,
+   "elevation_m": 400,
+   "landslide_hist": 8,
+   "river": "",
+   "river_adjacent": false,
+   "no_network": true,
+   "note": "Atharamura range",
+   "met_zones": [
+    "TR"
+   ],
+   "geometry": [
+    [
+     91.85,
+     23.93
+    ],
+    [
+     91.63,
+     23.84
+    ]
+   ]
+  },
+  {
+   "id": "TLM-AGT",
+   "source": "TLM",
+   "target": "AGT",
+   "mode": "road",
+   "route_ref": "NH8",
+   "road_class": "NH",
+   "terrain": "plain",
+   "length_km": 44.5,
+   "base_speed_kmh": 45,
+   "base_time_h": 0.99,
+   "slope_deg": 6,
+   "elevation_m": 100,
+   "landslide_hist": 1,
+   "river": "Haora",
+   "river_adjacent": true,
+   "no_network": false,
+   "note": "",
+   "met_zones": [
+    "TR"
+   ],
+   "geometry": [
+    [
+     91.63,
+     23.84
+    ],
+    [
+     91.28,
+     23.83
+    ]
+   ]
+  },
+  {
+   "id": "GHY-MGD",
+   "source": "GHY",
+   "target": "MGD",
+   "mode": "road",
+   "route_ref": "NH15",
+   "road_class": "NH",
+   "terrain": "plain",
+   "length_km": 55.1,
+   "base_speed_kmh": 45,
+   "base_time_h": 1.22,
+   "slope_deg": 2,
+   "elevation_m": 55,
+   "landslide_hist": 0,
+   "river": "Brahmaputra",
+   "river_adjacent": true,
+   "no_network": false,
+   "note": "Saraighat bridge",
+   "met_zones": [
+    "LA"
+   ],
+   "geometry": [
+    [
+     91.736,
+     26.144
+    ],
+    [
+     92.03,
+     26.44
+    ]
+   ]
+  },
+  {
+   "id": "MGD-TZP",
+   "source": "MGD",
+   "target": "TZP",
+   "mode": "road",
+   "route_ref": "NH15",
+   "road_class": "NH",
+   "terrain": "plain",
+   "length_km": 99.3,
+   "base_speed_kmh": 45,
+   "base_time_h": 2.21,
+   "slope_deg": 2,
+   "elevation_m": 80,
+   "landslide_hist": 0,
+   "river": "",
+   "river_adjacent": false,
+   "no_network": false,
+   "note": "",
+   "met_zones": [
+    "LA",
+    "NBK"
+   ],
+   "geometry": [
+    [
+     92.03,
+     26.44
+    ],
+    [
+     92.8,
+     26.63
+    ]
+   ]
+  },
+  {
+   "id": "TZP-BLP",
+   "source": "TZP",
+   "target": "BLP",
+   "mode": "road",
+   "route_ref": "NH15",
+   "road_class": "NH",
+   "terrain": "plain",
+   "length_km": 27.9,
+   "base_speed_kmh": 45,
+   "base_time_h": 0.62,
+   "slope_deg": 2,
+   "elevation_m": 100,
+   "landslide_hist": 0,
+   "river": "",
+   "river_adjacent": false,
+   "no_network": false,
+   "note": "",
+   "met_zones": [
+    "NBK"
+   ],
+   "geometry": [
+    [
+     92.8,
+     26.63
+    ],
+    [
+     92.78,
+     26.83
+    ]
+   ]
+  },
+  {
+   "id": "BLP-BHK",
+   "source": "BLP",
+   "target": "BHK",
+   "mode": "road",
+   "route_ref": "NH13",
+   "road_class": "NH",
+   "terrain": "plain",
+   "length_km": 29.8,
+   "base_speed_kmh": 45,
+   "base_time_h": 0.66,
+   "slope_deg": 5,
+   "elevation_m": 200,
+   "landslide_hist": 1,
+   "river": "Kameng",
+   "river_adjacent": true,
+   "no_network": false,
+   "note": "",
+   "met_zones": [
+    "NBK",
+    "WK"
+   ],
+   "geometry": [
+    [
+     92.78,
+     26.83
+    ],
+    [
+     92.65,
+     27.01
+    ]
+   ]
+  },
+  {
+   "id": "BHK-BMD",
+   "source": "BHK",
+   "target": "BMD",
+   "mode": "road",
+   "route_ref": "NH13",
+   "road_class": "NH",
+   "terrain": "mountain",
+   "length_km": 64.0,
+   "base_speed_kmh": 18,
+   "base_time_h": 3.55,
+   "slope_deg": 30,
+   "elevation_m": 2400,
+   "landslide_hist": 13,
+   "river": "Kameng",
+   "river_adjacent": true,
+   "no_network": true,
+   "note": "",
+   "met_zones": [
+    "WK"
+   ],
+   "geometry": [
+    [
+     92.65,
+     27.01
+    ],
+    [
+     92.41,
+     27.26
+    ]
+   ]
+  },
+  {
+   "id": "BMD-DRG",
+   "source": "BMD",
+   "target": "DRG",
+   "mode": "road",
+   "route_ref": "NH13",
+   "road_class": "NH",
+   "terrain": "mountain",
+   "length_km": 35.3,
+   "base_speed_kmh": 18,
+   "base_time_h": 1.96,
+   "slope_deg": 28,
+   "elevation_m": 2400,
+   "landslide_hist": 9,
+   "river": "",
+   "river_adjacent": false,
+   "no_network": false,
+   "note": "",
+   "met_zones": [
+    "WK"
+   ],
+   "geometry": [
+    [
+     92.41,
+     27.26
+    ],
+    [
+     92.24,
+     27.36
+    ]
+   ]
+  },
+  {
+   "id": "DRG-SLA",
+   "source": "DRG",
+   "target": "SLA",
+   "mode": "road",
+   "route_ref": "NH13",
+   "road_class": "NH",
+   "terrain": "mountain",
+   "length_km": 36.4,
+   "base_speed_kmh": 18,
+   "base_time_h": 2.02,
+   "slope_deg": 29,
+   "elevation_m": 4000,
+   "landslide_hist": 7,
+   "river": "",
+   "river_adjacent": false,
+   "no_network": true,
+   "note": "Sela tunnel; snow Dec-Mar",
+   "met_zones": [
+    "TW",
+    "WK"
+   ],
+   "geometry": [
+    [
+     92.24,
+     27.36
+    ],
+    [
+     92.1,
+     27.5
+    ]
+   ]
+  },
+  {
+   "id": "SLA-TWG",
+   "source": "SLA",
+   "target": "TWG",
+   "mode": "road",
+   "route_ref": "NH13",
+   "road_class": "NH",
+   "terrain": "mountain",
+   "length_km": 43.7,
+   "base_speed_kmh": 18,
+   "base_time_h": 2.43,
+   "slope_deg": 26,
+   "elevation_m": 4000,
+   "landslide_hist": 8,
+   "river": "",
+   "river_adjacent": false,
+   "no_network": true,
+   "note": "",
+   "met_zones": [
+    "TW"
+   ],
+   "geometry": [
+    [
+     92.1,
+     27.5
+    ],
+    [
+     91.866,
+     27.586
+    ]
+   ]
+  },
+  {
+   "id": "TZP-GHP",
+   "source": "TZP",
+   "target": "GHP",
+   "mode": "road",
+   "route_ref": "NH15",
+   "road_class": "NH",
+   "terrain": "plain",
+   "length_km": 107.5,
+   "base_speed_kmh": 45,
+   "base_time_h": 2.39,
+   "slope_deg": 2,
+   "elevation_m": 90,
+   "landslide_hist": 0,
+   "river": "",
+   "river_adjacent": false,
+   "no_network": false,
+   "note": "",
+   "met_zones": [
+    "NBK"
+   ],
+   "geometry": [
+    [
+     92.8,
+     26.63
+    ],
+    [
+     93.62,
+     26.88
+    ]
+   ]
+  },
+  {
+   "id": "GHP-ITN",
+   "source": "GHP",
+   "target": "ITN",
+   "mode": "road",
+   "route_ref": "NH415",
+   "road_class": "NH",
+   "terrain": "hill",
+   "length_km": 36.2,
+   "base_speed_kmh": 25,
+   "base_time_h": 1.45,
+   "slope_deg": 17,
+   "elevation_m": 400,
+   "landslide_hist": 5,
+   "river": "",
+   "river_adjacent": false,
+   "no_network": false,
+   "note": "",
+   "met_zones": [
+    "AR",
+    "NBK"
+   ],
+   "geometry": [
+    [
+     93.62,
+     26.88
+    ],
+    [
+     93.61,
+     27.09
+    ]
+   ]
+  },
+  {
+   "id": "GHP-NLK",
+   "source": "GHP",
+   "target": "NLK",
+   "mode": "road",
+   "route_ref": "NH15",
+   "road_class": "NH",
+   "terrain": "plain",
+   "length_km": 77.7,
+   "base_speed_kmh": 45,
+   "base_time_h": 1.73,
+   "slope_deg": 2,
+   "elevation_m": 100,
+   "landslide_hist": 0,
+   "river": "Ranganadi",
+   "river_adjacent": true,
+   "no_network": false,
+   "note": "",
+   "met_zones": [
+    "NBK"
+   ],
+   "geometry": [
+    [
+     93.62,
+     26.88
+    ],
+    [
+     94.1,
+     27.24
+    ]
+   ]
+  },
+  {
+   "id": "NLK-DMJ",
+   "source": "NLK",
+   "target": "DMJ",
+   "mode": "road",
+   "route_ref": "NH15",
+   "road_class": "NH",
+   "terrain": "plain",
+   "length_km": 68.0,
+   "base_speed_kmh": 45,
+   "base_time_h": 1.51,
+   "slope_deg": 2,
+   "elevation_m": 110,
+   "landslide_hist": 0,
+   "river": "Subansiri",
+   "river_adjacent": true,
+   "no_network": false,
+   "note": "Frequent flood breaches",
+   "met_zones": [
+    "NBK",
+    "UA"
+   ],
+   "geometry": [
+    [
+     94.1,
+     27.24
+    ],
+    [
+     94.58,
+     27.48
+    ]
+   ]
+  },
+  {
+   "id": "DMJ-DBR",
+   "source": "DMJ",
+   "target": "DBR",
+   "mode": "road",
+   "route_ref": "NH515",
+   "road_class": "NH",
+   "terrain": "plain",
+   "length_km": 40.7,
+   "base_speed_kmh": 45,
+   "base_time_h": 0.9,
+   "slope_deg": 1,
+   "elevation_m": 110,
+   "landslide_hist": 0,
+   "river": "Brahmaputra",
+   "river_adjacent": true,
+   "no_network": false,
+   "note": "Bogibeel bridge",
+   "met_zones": [
+    "UA"
+   ],
+   "geometry": [
+    [
+     94.58,
+     27.48
+    ],
+    [
+     94.91,
+     27.47
+    ]
+   ]
+  },
+  {
+   "id": "DMJ-PSG",
+   "source": "DMJ",
+   "target": "PSG",
+   "mode": "road",
+   "route_ref": "NH515",
+   "road_class": "NH",
+   "terrain": "plain",
+   "length_km": 123.4,
+   "base_speed_kmh": 45,
+   "base_time_h": 2.74,
+   "slope_deg": 5,
+   "elevation_m": 150,
+   "landslide_hist": 2,
+   "river": "Siang",
+   "river_adjacent": true,
+   "no_network": false,
+   "note": "",
+   "met_zones": [
+    "AR",
+    "UA"
+   ],
+   "geometry": [
+    [
+     94.58,
+     27.48
+    ],
+    [
+     95.33,
+     28.07
+    ]
+   ]
+  },
+  {
+   "id": "SLG-BNG-rail",
+   "source": "SLG",
+   "target": "BNG",
+   "mode": "rail",
+   "route_ref": "NFR NJP-NBQ",
+   "road_class": "RAIL",
+   "terrain": "plain",
+   "length_km": 282.1,
+   "base_speed_kmh": 30,
+   "base_time_h": 9.4,
+   "slope_deg": 1,
+   "elevation_m": 120,
+   "landslide_hist": 0,
+   "river": "",
+   "river_adjacent": false,
+   "no_network": false,
+   "note": "",
+   "met_zones": [
+    "LA",
+    "NB"
+   ],
+   "geometry": [
+    [
+     88.395,
+     26.727
+    ],
+    [
+     90.56,
+     26.48
+    ]
+   ]
+  },
+  {
+   "id": "BNG-GHY-rail",
+   "source": "BNG",
+   "target": "GHY",
+   "mode": "rail",
+   "route_ref": "NFR NBQ-GHY",
+   "road_class": "RAIL",
+   "terrain": "plain",
+   "length_km": 159.9,
+   "base_speed_kmh": 30,
+   "base_time_h": 5.33,
+   "slope_deg": 1,
+   "elevation_m": 60,
+   "landslide_hist": 0,
+   "river": "",
+   "river_adjacent": false,
+   "no_network": false,
+   "note": "",
+   "met_zones": [
+    "LA"
+   ],
+   "geometry": [
+    [
+     90.56,
+     26.48
+    ],
+    [
+     91.736,
+     26.144
+    ]
+   ]
+  },
+  {
+   "id": "GHY-LMD-rail",
+   "source": "GHY",
+   "target": "LMD",
+   "mode": "rail",
+   "route_ref": "NFR GHY-LMG",
+   "road_class": "RAIL",
+   "terrain": "plain",
+   "length_km": 194.9,
+   "base_speed_kmh": 30,
+   "base_time_h": 6.5,
+   "slope_deg": 2,
+   "elevation_m": 150,
+   "landslide_hist": 0,
+   "river": "",
+   "river_adjacent": false,
+   "no_network": false,
+   "note": "",
+   "met_zones": [
+    "CA",
+    "LA"
+   ],
+   "geometry": [
+    [
+     91.736,
+     26.144
+    ],
+    [
+     93.17,
+     25.75
+    ]
+   ]
+  },
+  {
+   "id": "LMD-DMR-rail",
+   "source": "LMD",
+   "target": "DMR",
+   "mode": "rail",
+   "route_ref": "NFR LMG-DMV",
+   "road_class": "RAIL",
+   "terrain": "plain",
+   "length_km": 75.9,
+   "base_speed_kmh": 30,
+   "base_time_h": 2.53,
+   "slope_deg": 2,
+   "elevation_m": 150,
+   "landslide_hist": 0,
+   "river": "",
+   "river_adjacent": false,
+   "no_network": false,
+   "note": "",
+   "met_zones": [
+    "CA",
+    "NL"
+   ],
+   "geometry": [
+    [
+     93.17,
+     25.75
+    ],
+    [
+     93.727,
+     25.906
+    ]
+   ]
+  },
+  {
+   "id": "DMR-JRT-rail",
+   "source": "DMR",
+   "target": "JRT",
+   "mode": "rail",
+   "route_ref": "NFR DMV-JTTN",
+   "road_class": "RAIL",
+   "terrain": "plain",
+   "length_km": 136.5,
+   "base_speed_kmh": 30,
+   "base_time_h": 4.55,
+   "slope_deg": 1,
+   "elevation_m": 150,
+   "landslide_hist": 0,
+   "river": "",
+   "river_adjacent": false,
+   "no_network": false,
+   "note": "",
+   "met_zones": [
+    "NL",
+    "UA"
+   ],
+   "geometry": [
+    [
+     93.727,
+     25.906
+    ],
+    [
+     94.2,
+     26.75
+    ]
+   ]
+  },
+  {
+   "id": "JRT-DBR-rail",
+   "source": "JRT",
+   "target": "DBR",
+   "mode": "rail",
+   "route_ref": "NFR JTTN-DBRG",
+   "road_class": "RAIL",
+   "terrain": "plain",
+   "length_km": 138.5,
+   "base_speed_kmh": 30,
+   "base_time_h": 4.62,
+   "slope_deg": 1,
+   "elevation_m": 110,
+   "landslide_hist": 0,
+   "river": "",
+   "river_adjacent": false,
+   "no_network": false,
+   "note": "",
+   "met_zones": [
+    "UA"
+   ],
+   "geometry": [
+    [
+     94.2,
+     26.75
+    ],
+    [
+     94.91,
+     27.47
+    ]
+   ]
+  },
+  {
+   "id": "LMD-NHF-rail",
+   "source": "LMD",
+   "target": "NHF",
+   "mode": "rail",
+   "route_ref": "NFR Hill Section",
+   "road_class": "RAIL",
+   "terrain": "mountain",
+   "length_km": 86.1,
+   "base_speed_kmh": 30,
+   "base_time_h": 2.87,
+   "slope_deg": 24,
+   "elevation_m": 700,
+   "landslide_hist": 19,
+   "river": "Jatinga",
+   "river_adjacent": true,
+   "no_network": true,
+   "note": "Lumding-Badarpur hill section; cut for weeks in 2022",
+   "met_zones": [
+    "CA",
+    "DH"
+   ],
+   "geometry": [
+    [
+     93.17,
+     25.75
+    ],
+    [
+     93.02,
+     25.17
+    ]
+   ]
+  },
+  {
+   "id": "NHF-BDP-rail",
+   "source": "NHF",
+   "target": "BDP",
+   "mode": "rail",
+   "route_ref": "NFR Hill Section",
+   "road_class": "RAIL",
+   "terrain": "hill",
+   "length_km": 70.7,
+   "base_speed_kmh": 30,
+   "base_time_h": 2.36,
+   "slope_deg": 22,
+   "elevation_m": 700,
+   "landslide_hist": 14,
+   "river": "Jatinga",
+   "river_adjacent": true,
+   "no_network": true,
+   "note": "",
+   "met_zones": [
+    "BV",
+    "DH"
+   ],
+   "geometry": [
+    [
+     93.02,
+     25.17
+    ],
+    [
+     92.595,
+     24.868
+    ]
+   ]
+  },
+  {
+   "id": "BDP-SCR-rail",
+   "source": "BDP",
+   "target": "SCR",
+   "mode": "rail",
+   "route_ref": "NFR BPB-SCL",
+   "road_class": "RAIL",
+   "terrain": "plain",
+   "length_km": 27.2,
+   "base_speed_kmh": 30,
+   "base_time_h": 0.91,
+   "slope_deg": 1,
+   "elevation_m": 22,
+   "landslide_hist": 0,
+   "river": "",
+   "river_adjacent": false,
+   "no_network": false,
+   "note": "",
+   "met_zones": [
+    "BV"
+   ],
+   "geometry": [
+    [
+     92.595,
+     24.868
+    ],
+    [
+     92.797,
+     24.827
+    ]
+   ]
+  },
+  {
+   "id": "BDP-DMN-rail",
+   "source": "BDP",
+   "target": "DMN",
+   "mode": "rail",
+   "route_ref": "NFR BPB-DMR",
+   "road_class": "RAIL",
+   "terrain": "plain",
+   "length_km": 91.1,
+   "base_speed_kmh": 30,
+   "base_time_h": 3.04,
+   "slope_deg": 3,
+   "elevation_m": 30,
+   "landslide_hist": 1,
+   "river": "",
+   "river_adjacent": false,
+   "no_network": false,
+   "note": "",
+   "met_zones": [
+    "BV",
+    "TR"
+   ],
+   "geometry": [
+    [
+     92.595,
+     24.868
+    ],
+    [
+     92.17,
+     24.37
+    ]
+   ]
+  },
+  {
+   "id": "DMN-AGT-rail",
+   "source": "DMN",
+   "target": "AGT",
+   "mode": "rail",
+   "route_ref": "NFR DMR-AGTL",
+   "road_class": "RAIL",
+   "terrain": "hill",
+   "length_km": 141.0,
+   "base_speed_kmh": 30,
+   "base_time_h": 4.7,
+   "slope_deg": 10,
+   "elevation_m": 30,
+   "landslide_hist": 3,
+   "river": "",
+   "river_adjacent": false,
+   "no_network": false,
+   "note": "",
+   "met_zones": [
+    "TR"
+   ],
+   "geometry": [
+    [
+     92.17,
+     24.37
+    ],
+    [
+     91.28,
+     23.83
+    ]
+   ]
+  },
+  {
+   "id": "SCR-BRB-rail",
+   "source": "SCR",
+   "target": "BRB",
+   "mode": "rail",
+   "route_ref": "NFR Katakhal-Bairabi",
+   "road_class": "RAIL",
+   "terrain": "plain",
+   "length_km": 98.5,
+   "base_speed_kmh": 30,
+   "base_time_h": 3.28,
+   "slope_deg": 4,
+   "elevation_m": 50,
+   "landslide_hist": 1,
+   "river": "",
+   "river_adjacent": false,
+   "no_network": false,
+   "note": "",
+   "met_zones": [
+    "BV",
+    "MZ"
+   ],
+   "geometry": [
+    [
+     92.797,
+     24.827
+    ],
+    [
+     92.53,
+     24.19
+    ]
+   ]
+  },
+  {
+   "id": "BRB-SRG-rail",
+   "source": "BRB",
+   "target": "SRG",
+   "mode": "rail",
+   "route_ref": "NFR Bairabi-Sairang",
+   "road_class": "RAIL",
+   "terrain": "hill",
+   "length_km": 57.6,
+   "base_speed_kmh": 30,
+   "base_time_h": 1.92,
+   "slope_deg": 12,
+   "elevation_m": 150,
+   "landslide_hist": 3,
+   "river": "",
+   "river_adjacent": false,
+   "no_network": false,
+   "note": "Opened Sept 2025; tunnel-heavy alignment",
+   "met_zones": [
+    "MZ"
+   ],
+   "geometry": [
+    [
+     92.53,
+     24.19
+    ],
+    [
+     92.66,
+     23.81
+    ]
+   ]
+  }
+ ],
+ "corridors": [
+  {
+   "id": "NH10",
+   "name": "Siliguri \u2013 Gangtok (NH10 Teesta valley)",
+   "nodes": [
+    "SLG",
+    "SVK",
+    "TBZ",
+    "MLI",
+    "RNP",
+    "SNG",
+    "GTK"
+   ],
+   "edges": [
+    "SLG-SVK",
+    "SVK-TBZ",
+    "TBZ-MLI",
+    "MLI-RNP",
+    "RNP-SNG",
+    "SNG-GTK"
+   ]
+  },
+  {
+   "id": "NH717A",
+   "name": "Siliguri \u2013 Gangtok bypass (NH717A via Lava)",
+   "nodes": [
+    "SLG",
+    "MAL",
+    "GRB",
+    "LAV",
+    "PDG",
+    "RNK",
+    "PKY",
+    "GTK"
+   ],
+   "edges": [
+    "SLG-MAL",
+    "MAL-GRB",
+    "GRB-LAV",
+    "LAV-PDG",
+    "PDG-RNK",
+    "RNK-PKY",
+    "PKY-GTK"
+   ]
+  },
+  {
+   "id": "NH27W",
+   "name": "Siliguri \u2013 Guwahati (NH27)",
+   "nodes": [
+    "SLG",
+    "DHP",
+    "SRP",
+    "BNG",
+    "GHY"
+   ],
+   "edges": [
+    "SLG-DHP",
+    "DHP-SRP",
+    "SRP-BNG",
+    "BNG-GHY"
+   ]
+  },
+  {
+   "id": "NH6",
+   "name": "Guwahati \u2013 Shillong \u2013 Silchar (NH6 via Sonapur)",
+   "nodes": [
+    "GHY",
+    "JRB",
+    "NGP",
+    "UMI",
+    "SHL",
+    "JWI",
+    "KHL",
+    "SNP",
+    "RTC",
+    "BDP",
+    "SCR"
+   ],
+   "edges": [
+    "GHY-JRB",
+    "JRB-NGP",
+    "NGP-UMI",
+    "UMI-SHL",
+    "SHL-JWI",
+    "JWI-KHL",
+    "KHL-SNP",
+    "SNP-RTC",
+    "RTC-BDP",
+    "BDP-SCR"
+   ]
+  },
+  {
+   "id": "NH27E",
+   "name": "Nagaon \u2013 Silchar (NH27 through Dima Hasao)",
+   "nodes": [
+    "JRB",
+    "NGN",
+    "LNK",
+    "MBG",
+    "HRJ",
+    "BLC",
+    "SCR"
+   ],
+   "edges": [
+    "JRB-NGN",
+    "NGN-LNK",
+    "LNK-MBG",
+    "MBG-HRJ",
+    "HRJ-BLC",
+    "BLC-SCR"
+   ]
+  },
+  {
+   "id": "NH29",
+   "name": "Dimapur \u2013 Kohima \u2013 Imphal (NH29 / NH2)",
+   "nodes": [
+    "DMR",
+    "CHM",
+    "PPH",
+    "KOH",
+    "MAO",
+    "SPT",
+    "KGK",
+    "IMP"
+   ],
+   "edges": [
+    "DMR-CHM",
+    "CHM-PPH",
+    "PPH-KOH",
+    "KOH-MAO",
+    "MAO-SPT",
+    "SPT-KGK",
+    "KGK-IMP"
+   ]
+  },
+  {
+   "id": "NH37M",
+   "name": "Silchar \u2013 Jiribam \u2013 Imphal (NH37)",
+   "nodes": [
+    "SCR",
+    "JRI",
+    "NGB",
+    "NNY",
+    "IMP"
+   ],
+   "edges": [
+    "SCR-JRI",
+    "JRI-NGB",
+    "NGB-NNY",
+    "NNY-IMP"
+   ]
+  },
+  {
+   "id": "NH306",
+   "name": "Silchar \u2013 Aizawl (NH306)",
+   "nodes": [
+    "SCR",
+    "VRT",
+    "KLS",
+    "AZL"
+   ],
+   "edges": [
+    "SCR-VRT",
+    "VRT-KLS",
+    "KLS-AZL"
+   ]
+  },
+  {
+   "id": "NH8",
+   "name": "Karimganj \u2013 Agartala (NH8)",
+   "nodes": [
+    "BDP",
+    "KMJ",
+    "CHB",
+    "DMN",
+    "KMG",
+    "AMB",
+    "TLM",
+    "AGT"
+   ],
+   "edges": [
+    "BDP-KMJ",
+    "KMJ-CHB",
+    "CHB-DMN",
+    "DMN-KMG",
+    "KMG-AMB",
+    "AMB-TLM",
+    "TLM-AGT"
+   ]
+  },
+  {
+   "id": "NH13",
+   "name": "Tezpur \u2013 Tawang (NH13 via Sela)",
+   "nodes": [
+    "TZP",
+    "BLP",
+    "BHK",
+    "BMD",
+    "DRG",
+    "SLA",
+    "TWG"
+   ],
+   "edges": [
+    "TZP-BLP",
+    "BLP-BHK",
+    "BHK-BMD",
+    "BMD-DRG",
+    "DRG-SLA",
+    "SLA-TWG"
+   ]
+  },
+  {
+   "id": "NH715",
+   "name": "Nagaon \u2013 Jorhat \u2013 Dibrugarh (NH715 / NH37)",
+   "nodes": [
+    "NGN",
+    "KLB",
+    "KZR",
+    "JRT",
+    "SVS",
+    "DBR"
+   ],
+   "edges": [
+    "NGN-KLB",
+    "KLB-KZR",
+    "KZR-JRT",
+    "JRT-SVS",
+    "SVS-DBR"
+   ]
+  },
+  {
+   "id": "NH15",
+   "name": "Guwahati \u2013 Tezpur \u2013 Dibrugarh north bank (NH15)",
+   "nodes": [
+    "GHY",
+    "MGD",
+    "TZP",
+    "GHP",
+    "NLK",
+    "DMJ",
+    "DBR"
+   ],
+   "edges": [
+    "GHY-MGD",
+    "MGD-TZP",
+    "TZP-GHP",
+    "GHP-NLK",
+    "NLK-DMJ",
+    "DMJ-DBR"
+   ]
+  }
+ ],
+ "met_zones": [
+  {
+   "id": "NB",
+   "name": "North Bengal Duars",
+   "lat": 26.8,
+   "lon": 88.6
+  },
+  {
+   "id": "SK",
+   "name": "Sikkim / Teesta valley",
+   "lat": 27.2,
+   "lon": 88.55
+  },
+  {
+   "id": "LA",
+   "name": "Lower Assam",
+   "lat": 26.25,
+   "lon": 91.2
+  },
+  {
+   "id": "GH",
+   "name": "Garo Hills",
+   "lat": 25.6,
+   "lon": 90.2
+  },
+  {
+   "id": "ML",
+   "name": "Khasi-Jaintia Hills",
+   "lat": 25.4,
+   "lon": 92.1
+  },
+  {
+   "id": "BV",
+   "name": "Barak valley",
+   "lat": 24.85,
+   "lon": 92.7
+  },
+  {
+   "id": "CA",
+   "name": "Central Assam",
+   "lat": 26.1,
+   "lon": 92.9
+  },
+  {
+   "id": "DH",
+   "name": "Dima Hasao",
+   "lat": 25.3,
+   "lon": 92.85
+  },
+  {
+   "id": "NL",
+   "name": "Nagaland foothills & Kohima",
+   "lat": 25.75,
+   "lon": 93.9
+  },
+  {
+   "id": "UA",
+   "name": "Upper Assam",
+   "lat": 26.9,
+   "lon": 94.4
+  },
+  {
+   "id": "MN",
+   "name": "Manipur hills",
+   "lat": 24.95,
+   "lon": 93.7
+  },
+  {
+   "id": "MZ",
+   "name": "Mizoram",
+   "lat": 24.0,
+   "lon": 92.7
+  },
+  {
+   "id": "TR",
+   "name": "Tripura",
+   "lat": 24.0,
+   "lon": 91.8
+  },
+  {
+   "id": "NBK",
+   "name": "North bank Assam",
+   "lat": 26.85,
+   "lon": 93.3
+  },
+  {
+   "id": "WK",
+   "name": "West Kameng",
+   "lat": 27.2,
+   "lon": 92.5
+  },
+  {
+   "id": "TW",
+   "name": "Tawang",
+   "lat": 27.55,
+   "lon": 92.0
+  },
+  {
+   "id": "AR",
+   "name": "Central Arunachal",
+   "lat": 27.5,
+   "lon": 94.2
+  }
+ ]
+}

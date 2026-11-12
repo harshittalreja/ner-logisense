@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NER-LogiSense &middot; Dispatcher</title>
+  <link rel="icon" href="/static/icons/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/static/vendor/maplibre-gl.css">
+  <link rel="stylesheet" href="/static/css/app.css">
+</head>
+<body>
+<div class="app">
+  <header class="topbar">
+    <div class="brand" id="brand"></div>
+    <div class="row">
+      <select id="scenario" title="Rainfall input to the hazard model" style="width:auto;max-width:300px"></select>
+      <button class="btn small" id="btn-live" type="button" title="Pull the last 7 days + 24 h forecast from Open-Meteo">Live rainfall</button>
+    </div>
+    <span class="chip hide-sm" id="freshness"><span class="dot"></span><span>&ndash;</span></span>
+    <div class="spacer"></div>
+    <span class="chip hide-sm hide-md" id="model-chip">model &ndash;</span>
+    <a class="btn small" href="/driver" target="_blank" rel="noopener">Driver app &#8599;</a>
+    <a class="btn small ghost hide-sm" href="/docs" target="_blank" rel="noopener">API &#8599;</a>
+  </header>
+
+  <div class="main">
+    <aside class="side">
+      <nav class="tabs" role="tablist">
+        <button class="tab active" data-tab="dispatch" type="button">Directions</button>
+        <button class="tab" data-tab="fleet" type="button">Live fleet<span class="live" aria-hidden="true"></span></button>
+        <button class="tab" data-tab="corridors" type="button">Corridors <span class="count hidden" id="blocked-count"></span></button>
+        <button class="tab" data-tab="shipments" type="button">Shipments</button>
+        <button class="tab" data-tab="kpi" type="button">KPI replay</button>
+        <button class="tab" data-tab="audit" type="button">Audit</button>
+      </nav>
+
+      <!-- DIRECTIONS ------------------------------------------------------------------------>
+      <section class="panel-body stack" data-panel="dispatch">
+        <div class="card stack">
+          <div class="row" style="align-items:stretch">
+            <div class="dirbox grow">
+              <div class="rail"><i></i><b></b><i class="b"></i></div>
+              <label class="field"><span class="hidden">Origin</span><select id="f-origin" aria-label="Origin"></select></label>
+              <label class="field"><span class="hidden">Destination</span><select id="f-dest" aria-label="Destination"></select></label>
+            </div>
+            <button class="btn ghost" id="btn-swap" type="button" title="Swap origin and destination" aria-label="Swap origin and destination">&#8645;</button>
+          </div>
+          <div class="grid3">
+            <label class="field"><span>Cargo</span><select id="f-cargo"></select></label>
+            <label class="field"><span>Priority</span>
+              <select id="f-priority"><option value="normal">Normal</option><option value="high">High</option><option value="critical">Critical</option></select></label>
+            <label class="field"><span>Deadline (h)</span><input id="f-deadline" type="number" min="1" step="1" value="24"></label>
+          </div>
+          <div class="row between wrap">
+            <div class="row" style="gap:12px">
+              <label class="check"><input type="checkbox" checked disabled> Road</label>
+              <label class="check"><input type="checkbox" id="m-rail" checked> Rail</label>
+              <label class="check"><input type="checkbox" id="m-ferry" checked> Ferry</label>
+            </div>
+            <span class="small muted" id="f-temp"></span>
+          </div>
+          <button class="btn primary" id="btn-optimize" type="button" style="width:100%">Find routes</button>
+        </div>
+        <div id="results" class="stack"></div>
+      </section>
+
+      <!-- LIVE FLEET ------------------------------------------------------------------------>
+      <section class="panel-body stack hidden" data-panel="fleet">
+        <div class="row between">
+          <h2>Live fleet</h2>
+          <span class="small muted" id="fleet-updated"></span>
+        </div>
+        <div class="card stack">
+          <div class="row between wrap">
+            <span class="small dim">Simulator clock</span>
+            <div class="seg" id="sim-speed" role="group" aria-label="Simulation speed">
+              <button type="button" data-speed="1">1&times;</button><button type="button" data-speed="10">10&times;</button>
+              <button type="button" data-speed="30">30&times;</button><button type="button" data-speed="120">120&times;</button>
+            </div>
+            <button class="btn small" id="sim-pause" type="button">Pause</button>
+          </div>
+          <div class="tiny muted">Simulated trucks drive the approved routes along the real roads, stop before blocked segments and report their position once a second. Real phone GPS will use the same feed (<span class="mono">POST /vehicles/{id}/position</span>).</div>
+        </div>
+        <div class="row wrap" id="fleet-summary"></div>
+        <div id="fleet-list"></div>
+      </section>
+
+      <!-- CORRIDORS ------------------------------------------------------------------------->
+      <section class="panel-body stack hidden" data-panel="corridors">
+        <div class="row between"><h2>Corridor health</h2><span class="small muted" id="corr-updated"></span></div>
+        <div class="grid3" id="corr-counts"></div>
+        <div id="corr-list"></div>
+        <h3 style="margin-top:18px">Alert feed</h3>
+        <ul class="feed" id="corr-feed"></ul>
+        <h3 style="margin-top:18px">Offline sync</h3>
+        <div id="sync-stats" class="small dim"></div>
+      </section>
+
+      <!-- SHIPMENTS ------------------------------------------------------------------------->
+      <section class="panel-body stack hidden" data-panel="shipments">
+        <div class="row between"><h2>Shipments in transit</h2><button class="btn small" id="btn-ship-refresh" type="button">Refresh</button></div>
+        <p class="small muted" style="margin:0">Warehouse and cold-chain view: remaining ETA against the deadline and the cargo's safe transit time, re-scored with the latest hazard picture and each truck's live position.</p>
+        <div id="ship-list" class="stack"></div>
+      </section>
+
+      <!-- KPI ------------------------------------------------------------------------------->
+      <section class="panel-body stack hidden" data-panel="kpi">
+        <h2>KPI replay: risk-aware routing vs shortest path</h2>
+        <p class="small muted" style="margin:0">Both routers drive through the same simulated world: true rain differs from the forecast, and blockages start and clear at random times. The baseline learns about a blockage only when the vehicle reaches it.</p>
+        <div class="grid3">
+          <label class="field"><span>Scenario</span><select id="k-scenario"></select></label>
+          <label class="field"><span>Cargo</span><select id="k-cargo"></select></label>
+          <label class="field"><span>Trials</span><input id="k-trials" type="number" min="20" max="2000" value="400"></label>
+        </div>
+        <div>
+          <div class="row between"><span class="small dim">Injected closures</span>
+            <button class="btn small" id="k-pick" type="button">Pick on map</button></div>
+          <div id="k-closures" class="row wrap" style="margin-top:6px"><span class="small muted">None: click &ldquo;Pick on map&rdquo;, then click road segments.</span></div>
+        </div>
+        <button class="btn primary" id="btn-kpi" type="button" style="width:100%">Run replay</button>
+        <div id="kpi-out" class="stack"></div>
+      </section>
+
+      <!-- AUDIT ----------------------------------------------------------------------------->
+      <section class="panel-body stack hidden" data-panel="audit">
+        <div class="row between"><h2>Audit trail</h2><button class="btn small" id="btn-audit" type="button">Refresh</button></div>
+        <p class="small muted" style="margin:0">Every approval, override and scenario change, with model version and data freshness.</p>
+        <table class="t" id="audit-table"></table>
+      </section>
+    </aside>
+
+    <div class="mapwrap">
+      <div id="map"></div>
+      <div class="map-ctl map-status hidden" id="map-status"></div>
+      <div class="map-ctl layers-btn"><button type="button" id="btn-layers" aria-expanded="false">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3 2 8l10 5 10-5-10-5z"/><path d="m2 13 10 5 10-5"/></svg>Layers</button></div>
+      <div class="map-ctl layers-pop hidden" id="layers-pop">
+        <h3>Map type</h3>
+        <div class="basemaps" id="basemaps"></div>
+        <h3>Show</h3>
+        <label><input type="checkbox" id="ly-hazard" checked> Hazard on corridors H(e,t)</label>
+        <div class="hz-legend">
+          <span><i style="background:#1e9e4a"></i>Low</span><span><i style="background:#e8a200"></i>Elevated</span>
+          <span><i style="background:#e8642c"></i>Medium</span><span><i style="background:#d12f2f"></i>High</span><span><i style="background:#8e1414"></i>Blocked</span>
+        </div>
+        <label><input type="checkbox" id="ly-rail" checked> Rail and ferry links</label>
+        <label><input type="checkbox" id="ly-trucks" checked> Trucks (live)</label>
+        <label><input type="checkbox" id="ly-incidents" checked> Field reports</label>
+      </div>
+      <div class="maptip hidden chip warn" id="pick-tip"><span class="dot"></span>Click road segments to toggle closures &middot; <a href="#" id="pick-done">done</a></div>
+      <div class="drawer hidden" id="drawer"></div>
+    </div>
+  </div>
+</div>
+<script src="/static/vendor/maplibre-gl.js"></script>
+<script type="module" src="/static/js/dispatcher.js"></script>
+</body>
+</html>

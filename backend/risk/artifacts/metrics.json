@@ -1,0 +1,192 @@
+{
+ "model_version": "hazard-xgb-1.0",
+ "trained_at": "2026-09-24T18:19:01Z",
+ "n_train": 61200,
+ "n_val": 10800,
+ "n_test": 18000,
+ "positive_rate": 0.0336,
+ "best_iteration": 150,
+ "features": [
+  "slope_deg",
+  "elevation_km",
+  "landslide_hist",
+  "river_adjacent",
+  "mode_code",
+  "rain_24h",
+  "rain_72h",
+  "rain_7d",
+  "fcst_24h",
+  "id_ratio",
+  "reports_6h",
+  "monsoon"
+ ],
+ "monotone": {
+  "slope_deg": 1,
+  "landslide_hist": 1,
+  "rain_24h": 1,
+  "rain_72h": 1,
+  "rain_7d": 1,
+  "fcst_24h": 1,
+  "id_ratio": 1,
+  "reports_6h": 1,
+  "river_adjacent": 1
+ },
+ "test": {
+  "xgboost": {
+   "auc": 0.9578,
+   "pr_auc": 0.6659,
+   "brier": 0.01779,
+   "logloss": 0.0681
+  },
+  "logistic_regression": {
+   "auc": 0.9412,
+   "pr_auc": 0.6105,
+   "brier": 0.01943,
+   "logloss": 0.0761
+  },
+  "rainfall_threshold_rule": {
+   "auc": 0.8109,
+   "pr_auc": 0.1136,
+   "brier": 0.24961,
+   "logloss": 2.192
+  },
+  "oracle_generator": {
+   "auc": 0.9331,
+   "pr_auc": 0.507,
+   "brier": 0.02219,
+   "logloss": 0.0847
+  }
+ },
+ "alert_threshold": 0.35,
+ "alert_confusion": {
+  "tp": 333,
+  "fp": 147,
+  "fn": 272,
+  "precision": 0.694,
+  "recall": 0.55
+ },
+ "calibration": [
+  {
+   "p_lo": 0.0,
+   "p_hi": 0.0004,
+   "n": 1800,
+   "mean_pred": 0.0003,
+   "observed": 0.0006
+  },
+  {
+   "p_lo": 0.0004,
+   "p_hi": 0.0008,
+   "n": 1800,
+   "mean_pred": 0.0006,
+   "observed": 0.0
+  },
+  {
+   "p_lo": 0.0008,
+   "p_hi": 0.0012,
+   "n": 1800,
+   "mean_pred": 0.001,
+   "observed": 0.0
+  },
+  {
+   "p_lo": 0.0012,
+   "p_hi": 0.0019,
+   "n": 1800,
+   "mean_pred": 0.0015,
+   "observed": 0.0
+  },
+  {
+   "p_lo": 0.0019,
+   "p_hi": 0.0031,
+   "n": 1800,
+   "mean_pred": 0.0025,
+   "observed": 0.0017
+  },
+  {
+   "p_lo": 0.0031,
+   "p_hi": 0.0048,
+   "n": 1800,
+   "mean_pred": 0.0039,
+   "observed": 0.0028
+  },
+  {
+   "p_lo": 0.0048,
+   "p_hi": 0.0084,
+   "n": 1800,
+   "mean_pred": 0.0064,
+   "observed": 0.0056
+  },
+  {
+   "p_lo": 0.0084,
+   "p_hi": 0.0161,
+   "n": 1800,
+   "mean_pred": 0.0116,
+   "observed": 0.0161
+  },
+  {
+   "p_lo": 0.0161,
+   "p_hi": 0.0484,
+   "n": 1800,
+   "mean_pred": 0.0279,
+   "observed": 0.0233
+  },
+  {
+   "p_lo": 0.0484,
+   "p_hi": 1.0,
+   "n": 1800,
+   "mean_pred": 0.2772,
+   "observed": 0.2861
+  }
+ ],
+ "importance": [
+  [
+   "slope_deg",
+   0.3059
+  ],
+  [
+   "reports_6h",
+   0.2317
+  ],
+  [
+   "rain_72h",
+   0.1771
+  ],
+  [
+   "id_ratio",
+   0.1033
+  ],
+  [
+   "landslide_hist",
+   0.0614
+  ],
+  [
+   "rain_7d",
+   0.0314
+  ],
+  [
+   "river_adjacent",
+   0.0221
+  ],
+  [
+   "fcst_24h",
+   0.022
+  ],
+  [
+   "mode_code",
+   0.0218
+  ],
+  [
+   "elevation_km",
+   0.0142
+  ],
+  [
+   "rain_24h",
+   0.0067
+  ],
+  [
+   "monsoon",
+   0.0025
+  ]
+ ],
+ "train_seconds": 5.7,
+ "data_note": "Synthetic labels from backend/risk/generator.py (physically-motivated). Replace with real closure logs for a pilot."
+}

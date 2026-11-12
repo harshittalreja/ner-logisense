@@ -1,0 +1,844 @@
+{
+ "all_dry_winter": {
+  "settings": {
+   "scenario": "dry_winter",
+   "trials": 600,
+   "cargo": "general",
+   "od_pairs": "all 12"
+  },
+  "trials": 600,
+  "mean_delay_baseline_h": 0.35,
+  "mean_delay_risk_aware_h": 0.34,
+  "delay_avoided_pct": 3.8,
+  "mean_trip_baseline_h": 12.88,
+  "mean_trip_risk_aware_h": 12.87,
+  "p90_trip_baseline_h": 22.36,
+  "p90_trip_risk_aware_h": 19.79,
+  "eta_error_baseline_pct": 1.6,
+  "eta_error_risk_aware_pct": 3.4,
+  "blockage_encounter_baseline_pct": 2.7,
+  "blockage_encounter_risk_aware_pct": 2.7,
+  "reroute_success_pct": 0.0,
+  "trips_exposed_baseline": 16,
+  "decision_latency_ms_p95": 5.3,
+  "cold_chain_breaches_baseline": null,
+  "cold_chain_breaches_risk_aware": null,
+  "cold_chain_flagged_before_breach_pct": null,
+  "per_od": [
+   {
+    "od": "SLG-GTK",
+    "n": 50,
+    "base_delay_h": 0.43,
+    "aware_delay_h": 0.27
+   },
+   {
+    "od": "GHY-SCR",
+    "n": 50,
+    "base_delay_h": 0.7,
+    "aware_delay_h": 0.7
+   },
+   {
+    "od": "GHY-IMP",
+    "n": 50,
+    "base_delay_h": 0.0,
+    "aware_delay_h": 0.0
+   },
+   {
+    "od": "GHY-AZL",
+    "n": 50,
+    "base_delay_h": 1.26,
+    "aware_delay_h": 1.26
+   },
+   {
+    "od": "GHY-AGT",
+    "n": 50,
+    "base_delay_h": 0.15,
+    "aware_delay_h": 0.15
+   },
+   {
+    "od": "SCR-IMP",
+    "n": 50,
+    "base_delay_h": 0.88,
+    "aware_delay_h": 0.88
+   },
+   {
+    "od": "GHY-TWG",
+    "n": 50,
+    "base_delay_h": 0.15,
+    "aware_delay_h": 0.15
+   },
+   {
+    "od": "DMR-IMP",
+    "n": 50,
+    "base_delay_h": 0.0,
+    "aware_delay_h": 0.0
+   },
+   {
+    "od": "SLG-SCR",
+    "n": 50,
+    "base_delay_h": 0.64,
+    "aware_delay_h": 0.64
+   },
+   {
+    "od": "GHY-SHL",
+    "n": 50,
+    "base_delay_h": 0.0,
+    "aware_delay_h": 0.0
+   },
+   {
+    "od": "SCR-AGT",
+    "n": 50,
+    "base_delay_h": 0.0,
+    "aware_delay_h": 0.0
+   },
+   {
+    "od": "GHY-DBR",
+    "n": 50,
+    "base_delay_h": 0.0,
+    "aware_delay_h": 0.0
+   }
+  ]
+ },
+ "all_normal_monsoon": {
+  "settings": {
+   "scenario": "normal_monsoon",
+   "trials": 600,
+   "cargo": "general",
+   "od_pairs": "all 12"
+  },
+  "trials": 600,
+  "mean_delay_baseline_h": 2.53,
+  "mean_delay_risk_aware_h": 2.82,
+  "delay_avoided_pct": -11.6,
+  "mean_trip_baseline_h": 16.07,
+  "mean_trip_risk_aware_h": 16.37,
+  "p90_trip_baseline_h": 28.51,
+  "p90_trip_risk_aware_h": 27.37,
+  "eta_error_baseline_pct": 14.8,
+  "eta_error_risk_aware_pct": 14.1,
+  "blockage_encounter_baseline_pct": 17.3,
+  "blockage_encounter_risk_aware_pct": 15.0,
+  "reroute_success_pct": 44.2,
+  "trips_exposed_baseline": 104,
+  "decision_latency_ms_p95": 5.5,
+  "cold_chain_breaches_baseline": null,
+  "cold_chain_breaches_risk_aware": null,
+  "cold_chain_flagged_before_breach_pct": null,
+  "per_od": [
+   {
+    "od": "SLG-GTK",
+    "n": 50,
+    "base_delay_h": 2.33,
+    "aware_delay_h": 2.24
+   },
+   {
+    "od": "GHY-SCR",
+    "n": 50,
+    "base_delay_h": 2.37,
+    "aware_delay_h": 4.15
+   },
+   {
+    "od": "GHY-IMP",
+    "n": 50,
+    "base_delay_h": 2.36,
+    "aware_delay_h": 2.39
+   },
+   {
+    "od": "GHY-AZL",
+    "n": 50,
+    "base_delay_h": 3.74,
+    "aware_delay_h": 5.55
+   },
+   {
+    "od": "GHY-AGT",
+    "n": 50,
+    "base_delay_h": 4.1,
+    "aware_delay_h": 4.94
+   },
+   {
+    "od": "SCR-IMP",
+    "n": 50,
+    "base_delay_h": 3.64,
+    "aware_delay_h": 3.71
+   },
+   {
+    "od": "GHY-TWG",
+    "n": 50,
+    "base_delay_h": 2.37,
+    "aware_delay_h": 2.37
+   },
+   {
+    "od": "DMR-IMP",
+    "n": 50,
+    "base_delay_h": 2.89,
+    "aware_delay_h": 2.12
+   },
+   {
+    "od": "SLG-SCR",
+    "n": 50,
+    "base_delay_h": 5.45,
+    "aware_delay_h": 5.52
+   },
+   {
+    "od": "GHY-SHL",
+    "n": 50,
+    "base_delay_h": 0.98,
+    "aware_delay_h": 0.75
+   },
+   {
+    "od": "SCR-AGT",
+    "n": 50,
+    "base_delay_h": 0.11,
+    "aware_delay_h": 0.11
+   },
+   {
+    "od": "GHY-DBR",
+    "n": 50,
+    "base_delay_h": 0.0,
+    "aware_delay_h": 0.0
+   }
+  ]
+ },
+ "all_kameng_extreme": {
+  "settings": {
+   "scenario": "kameng_extreme",
+   "trials": 600,
+   "cargo": "general",
+   "od_pairs": "all 12"
+  },
+  "trials": 600,
+  "mean_delay_baseline_h": 2.52,
+  "mean_delay_risk_aware_h": 2.53,
+  "delay_avoided_pct": -0.4,
+  "mean_trip_baseline_h": 15.94,
+  "mean_trip_risk_aware_h": 15.95,
+  "p90_trip_baseline_h": 24.95,
+  "p90_trip_risk_aware_h": 25.04,
+  "eta_error_baseline_pct": 11.1,
+  "eta_error_risk_aware_pct": 11.4,
+  "blockage_encounter_baseline_pct": 12.7,
+  "blockage_encounter_risk_aware_pct": 12.0,
+  "reroute_success_pct": 5.3,
+  "trips_exposed_baseline": 76,
+  "decision_latency_ms_p95": 5.1,
+  "cold_chain_breaches_baseline": null,
+  "cold_chain_breaches_risk_aware": null,
+  "cold_chain_flagged_before_breach_pct": null,
+  "per_od": [
+   {
+    "od": "SLG-GTK",
+    "n": 50,
+    "base_delay_h": 0.26,
+    "aware_delay_h": 0.23
+   },
+   {
+    "od": "GHY-SCR",
+    "n": 50,
+    "base_delay_h": 0.75,
+    "aware_delay_h": 0.45
+   },
+   {
+    "od": "GHY-IMP",
+    "n": 50,
+    "base_delay_h": 0.89,
+    "aware_delay_h": 0.89
+   },
+   {
+    "od": "GHY-AZL",
+    "n": 50,
+    "base_delay_h": 2.0,
+    "aware_delay_h": 2.21
+   },
+   {
+    "od": "GHY-AGT",
+    "n": 50,
+    "base_delay_h": 0.44,
+    "aware_delay_h": 0.44
+   },
+   {
+    "od": "SCR-IMP",
+    "n": 50,
+    "base_delay_h": 2.96,
+    "aware_delay_h": 3.19
+   },
+   {
+    "od": "GHY-TWG",
+    "n": 50,
+    "base_delay_h": 21.23,
+    "aware_delay_h": 21.23
+   },
+   {
+    "od": "DMR-IMP",
+    "n": 50,
+    "base_delay_h": 1.43,
+    "aware_delay_h": 1.43
+   },
+   {
+    "od": "SLG-SCR",
+    "n": 50,
+    "base_delay_h": 0.07,
+    "aware_delay_h": 0.07
+   },
+   {
+    "od": "GHY-SHL",
+    "n": 50,
+    "base_delay_h": 0.0,
+    "aware_delay_h": 0.0
+   },
+   {
+    "od": "SCR-AGT",
+    "n": 50,
+    "base_delay_h": 0.16,
+    "aware_delay_h": 0.16
+   },
+   {
+    "od": "GHY-DBR",
+    "n": 50,
+    "base_delay_h": 0.0,
+    "aware_delay_h": 0.0
+   }
+  ]
+ },
+ "all_teesta_extreme": {
+  "settings": {
+   "scenario": "teesta_extreme",
+   "trials": 600,
+   "cargo": "general",
+   "od_pairs": "all 12"
+  },
+  "trials": 600,
+  "mean_delay_baseline_h": 2.69,
+  "mean_delay_risk_aware_h": 2.76,
+  "delay_avoided_pct": -2.4,
+  "mean_trip_baseline_h": 16.09,
+  "mean_trip_risk_aware_h": 16.15,
+  "p90_trip_baseline_h": 24.38,
+  "p90_trip_risk_aware_h": 24.25,
+  "eta_error_baseline_pct": 14.8,
+  "eta_error_risk_aware_pct": 12.1,
+  "blockage_encounter_baseline_pct": 16.7,
+  "blockage_encounter_risk_aware_pct": 13.2,
+  "reroute_success_pct": 21.0,
+  "trips_exposed_baseline": 100,
+  "decision_latency_ms_p95": 4.9,
+  "cold_chain_breaches_baseline": null,
+  "cold_chain_breaches_risk_aware": null,
+  "cold_chain_flagged_before_breach_pct": null,
+  "per_od": [
+   {
+    "od": "SLG-GTK",
+    "n": 50,
+    "base_delay_h": 17.89,
+    "aware_delay_h": 19.51
+   },
+   {
+    "od": "GHY-SCR",
+    "n": 50,
+    "base_delay_h": 0.98,
+    "aware_delay_h": 1.0
+   },
+   {
+    "od": "GHY-IMP",
+    "n": 50,
+    "base_delay_h": 1.03,
+    "aware_delay_h": 0.95
+   },
+   {
+    "od": "GHY-AZL",
+    "n": 50,
+    "base_delay_h": 1.93,
+    "aware_delay_h": 1.38
+   },
+   {
+    "od": "GHY-AGT",
+    "n": 50,
+    "base_delay_h": 2.05,
+    "aware_delay_h": 1.86
+   },
+   {
+    "od": "SCR-IMP",
+    "n": 50,
+    "base_delay_h": 4.26,
+    "aware_delay_h": 4.23
+   },
+   {
+    "od": "GHY-TWG",
+    "n": 50,
+    "base_delay_h": 1.33,
+    "aware_delay_h": 1.33
+   },
+   {
+    "od": "DMR-IMP",
+    "n": 50,
+    "base_delay_h": 1.62,
+    "aware_delay_h": 1.6
+   },
+   {
+    "od": "SLG-SCR",
+    "n": 50,
+    "base_delay_h": 0.91,
+    "aware_delay_h": 0.91
+   },
+   {
+    "od": "GHY-SHL",
+    "n": 50,
+    "base_delay_h": 0.24,
+    "aware_delay_h": 0.24
+   },
+   {
+    "od": "SCR-AGT",
+    "n": 50,
+    "base_delay_h": 0.01,
+    "aware_delay_h": 0.01
+   },
+   {
+    "od": "GHY-DBR",
+    "n": 50,
+    "base_delay_h": 0.04,
+    "aware_delay_h": 0.04
+   }
+  ]
+ },
+ "all_barak_extreme": {
+  "settings": {
+   "scenario": "barak_extreme",
+   "trials": 600,
+   "cargo": "general",
+   "od_pairs": "all 12"
+  },
+  "trials": 600,
+  "mean_delay_baseline_h": 13.96,
+  "mean_delay_risk_aware_h": 11.78,
+  "delay_avoided_pct": 15.6,
+  "mean_trip_baseline_h": 29.9,
+  "mean_trip_risk_aware_h": 27.71,
+  "p90_trip_baseline_h": 67.15,
+  "p90_trip_risk_aware_h": 61.45,
+  "eta_error_baseline_pct": 36.2,
+  "eta_error_risk_aware_pct": 31.6,
+  "blockage_encounter_baseline_pct": 43.0,
+  "blockage_encounter_risk_aware_pct": 41.7,
+  "reroute_success_pct": 3.1,
+  "trips_exposed_baseline": 258,
+  "decision_latency_ms_p95": 5.0,
+  "cold_chain_breaches_baseline": null,
+  "cold_chain_breaches_risk_aware": null,
+  "cold_chain_flagged_before_breach_pct": null,
+  "per_od": [
+   {
+    "od": "SLG-GTK",
+    "n": 50,
+    "base_delay_h": 0.48,
+    "aware_delay_h": 0.39
+   },
+   {
+    "od": "GHY-SCR",
+    "n": 50,
+    "base_delay_h": 30.21,
+    "aware_delay_h": 23.67
+   },
+   {
+    "od": "GHY-IMP",
+    "n": 50,
+    "base_delay_h": 9.99,
+    "aware_delay_h": 6.7
+   },
+   {
+    "od": "GHY-AZL",
+    "n": 50,
+    "base_delay_h": 27.49,
+    "aware_delay_h": 25.43
+   },
+   {
+    "od": "GHY-AGT",
+    "n": 50,
+    "base_delay_h": 33.75,
+    "aware_delay_h": 24.25
+   },
+   {
+    "od": "SCR-IMP",
+    "n": 50,
+    "base_delay_h": 32.25,
+    "aware_delay_h": 29.53
+   },
+   {
+    "od": "GHY-TWG",
+    "n": 50,
+    "base_delay_h": 1.35,
+    "aware_delay_h": 1.35
+   },
+   {
+    "od": "DMR-IMP",
+    "n": 50,
+    "base_delay_h": 8.98,
+    "aware_delay_h": 4.35
+   },
+   {
+    "od": "SLG-SCR",
+    "n": 50,
+    "base_delay_h": 17.38,
+    "aware_delay_h": 22.62
+   },
+   {
+    "od": "GHY-SHL",
+    "n": 50,
+    "base_delay_h": 4.74,
+    "aware_delay_h": 2.14
+   },
+   {
+    "od": "SCR-AGT",
+    "n": 50,
+    "base_delay_h": 0.9,
+    "aware_delay_h": 0.9
+   },
+   {
+    "od": "GHY-DBR",
+    "n": 50,
+    "base_delay_h": 0.0,
+    "aware_delay_h": 0.0
+   }
+  ]
+ },
+ "case1_nh10": {
+  "settings": {
+   "scenario": "teesta_extreme",
+   "trials": 300,
+   "cargo": "perishable",
+   "od_pairs": [
+    [
+     "SLG",
+     "GTK"
+    ]
+   ],
+   "closures": [
+    "SVK-TBZ"
+   ]
+  },
+  "trials": 300,
+  "mean_delay_baseline_h": 20.95,
+  "mean_delay_risk_aware_h": 16.67,
+  "delay_avoided_pct": 20.4,
+  "mean_trip_baseline_h": 26.91,
+  "mean_trip_risk_aware_h": 22.63,
+  "p90_trip_baseline_h": 50.17,
+  "p90_trip_risk_aware_h": 43.82,
+  "eta_error_baseline_pct": 77.7,
+  "eta_error_risk_aware_pct": 49.2,
+  "blockage_encounter_baseline_pct": 100.0,
+  "blockage_encounter_risk_aware_pct": 62.7,
+  "reroute_success_pct": 37.3,
+  "trips_exposed_baseline": 300,
+  "decision_latency_ms_p95": 4.8,
+  "cold_chain_breaches_baseline": 34,
+  "cold_chain_breaches_risk_aware": 17,
+  "cold_chain_flagged_before_breach_pct": 100.0,
+  "per_od": [
+   {
+    "od": "SLG-GTK",
+    "n": 300,
+    "base_delay_h": 20.95,
+    "aware_delay_h": 16.67
+   }
+  ]
+ },
+ "case2_dima_extreme": {
+  "settings": {
+   "scenario": "barak_extreme",
+   "trials": 400,
+   "cargo": "pharma",
+   "od_pairs": [
+    [
+     "GHY",
+     "SCR"
+    ],
+    [
+     "GHY",
+     "AGT"
+    ],
+    [
+     "GHY",
+     "AZL"
+    ],
+    [
+     "SLG",
+     "SCR"
+    ]
+   ],
+   "closures": [
+    "MBG-HRJ",
+    "LMD-NHF-rail",
+    "NHF-BDP-rail"
+   ]
+  },
+  "trials": 400,
+  "mean_delay_baseline_h": 53.31,
+  "mean_delay_risk_aware_h": 26.71,
+  "delay_avoided_pct": 49.9,
+  "mean_trip_baseline_h": 78.21,
+  "mean_trip_risk_aware_h": 51.6,
+  "p90_trip_baseline_h": 113.01,
+  "p90_trip_risk_aware_h": 83.73,
+  "eta_error_baseline_pct": 65.1,
+  "eta_error_risk_aware_pct": 44.1,
+  "blockage_encounter_baseline_pct": 81.8,
+  "blockage_encounter_risk_aware_pct": 80.2,
+  "reroute_success_pct": 1.8,
+  "trips_exposed_baseline": 327,
+  "decision_latency_ms_p95": 6.3,
+  "cold_chain_breaches_baseline": 283,
+  "cold_chain_breaches_risk_aware": 268,
+  "cold_chain_flagged_before_breach_pct": 100.0,
+  "per_od": [
+   {
+    "od": "GHY-SCR",
+    "n": 100,
+    "base_delay_h": 56.3,
+    "aware_delay_h": 23.98
+   },
+   {
+    "od": "GHY-AGT",
+    "n": 100,
+    "base_delay_h": 57.9,
+    "aware_delay_h": 28.41
+   },
+   {
+    "od": "GHY-AZL",
+    "n": 100,
+    "base_delay_h": 61.91,
+    "aware_delay_h": 34.89
+   },
+   {
+    "od": "SLG-SCR",
+    "n": 100,
+    "base_delay_h": 37.14,
+    "aware_delay_h": 19.54
+   }
+  ]
+ },
+ "case2_dima_monsoon": {
+  "settings": {
+   "scenario": "normal_monsoon",
+   "trials": 400,
+   "cargo": "pharma",
+   "od_pairs": [
+    [
+     "GHY",
+     "SCR"
+    ],
+    [
+     "GHY",
+     "AGT"
+    ],
+    [
+     "GHY",
+     "AZL"
+    ],
+    [
+     "SLG",
+     "SCR"
+    ]
+   ],
+   "closures": [
+    "MBG-HRJ",
+    "LMD-NHF-rail",
+    "NHF-BDP-rail"
+   ]
+  },
+  "trials": 400,
+  "mean_delay_baseline_h": 17.98,
+  "mean_delay_risk_aware_h": 6.13,
+  "delay_avoided_pct": 65.9,
+  "mean_trip_baseline_h": 38.04,
+  "mean_trip_risk_aware_h": 26.19,
+  "p90_trip_baseline_h": 105.59,
+  "p90_trip_risk_aware_h": 45.29,
+  "eta_error_baseline_pct": 26.8,
+  "eta_error_risk_aware_pct": 33.0,
+  "blockage_encounter_baseline_pct": 32.0,
+  "blockage_encounter_risk_aware_pct": 31.2,
+  "reroute_success_pct": 2.3,
+  "trips_exposed_baseline": 128,
+  "decision_latency_ms_p95": 5.7,
+  "cold_chain_breaches_baseline": 83,
+  "cold_chain_breaches_risk_aware": 77,
+  "cold_chain_flagged_before_breach_pct": 100.0,
+  "per_od": [
+   {
+    "od": "GHY-SCR",
+    "n": 100,
+    "base_delay_h": 17.53,
+    "aware_delay_h": 6.25
+   },
+   {
+    "od": "GHY-AGT",
+    "n": 100,
+    "base_delay_h": 12.68,
+    "aware_delay_h": 4.59
+   },
+   {
+    "od": "GHY-AZL",
+    "n": 100,
+    "base_delay_h": 22.48,
+    "aware_delay_h": 7.82
+   },
+   {
+    "od": "SLG-SCR",
+    "n": 100,
+    "base_delay_h": 19.22,
+    "aware_delay_h": 5.86
+   }
+  ]
+ },
+ "case3_manipur": {
+  "settings": {
+   "scenario": "normal_monsoon",
+   "trials": 300,
+   "cargo": "relief",
+   "od_pairs": [
+    [
+     "SCR",
+     "IMP"
+    ],
+    [
+     "GHY",
+     "IMP"
+    ]
+   ],
+   "closures": [
+    "NGB-NNY"
+   ]
+  },
+  "trials": 300,
+  "mean_delay_baseline_h": 17.21,
+  "mean_delay_risk_aware_h": 8.51,
+  "delay_avoided_pct": 50.6,
+  "mean_trip_baseline_h": 31.45,
+  "mean_trip_risk_aware_h": 22.75,
+  "p90_trip_baseline_h": 42.27,
+  "p90_trip_risk_aware_h": 25.55,
+  "eta_error_baseline_pct": 41.2,
+  "eta_error_risk_aware_pct": 9.0,
+  "blockage_encounter_baseline_pct": 52.7,
+  "blockage_encounter_risk_aware_pct": 7.3,
+  "reroute_success_pct": 86.1,
+  "trips_exposed_baseline": 158,
+  "decision_latency_ms_p95": 6.4,
+  "cold_chain_breaches_baseline": null,
+  "cold_chain_breaches_risk_aware": null,
+  "cold_chain_flagged_before_breach_pct": null,
+  "per_od": [
+   {
+    "od": "SCR-IMP",
+    "n": 150,
+    "base_delay_h": 32.33,
+    "aware_delay_h": 15.87
+   },
+   {
+    "od": "GHY-IMP",
+    "n": 150,
+    "base_delay_h": 2.09,
+    "aware_delay_h": 1.15
+   }
+  ]
+ },
+ "case4_pharma_monsoon": {
+  "settings": {
+   "scenario": "normal_monsoon",
+   "trials": 600,
+   "cargo": "pharma",
+   "od_pairs": "all 12"
+  },
+  "trials": 600,
+  "mean_delay_baseline_h": 2.53,
+  "mean_delay_risk_aware_h": 3.56,
+  "delay_avoided_pct": -41.0,
+  "mean_trip_baseline_h": 16.07,
+  "mean_trip_risk_aware_h": 17.11,
+  "p90_trip_baseline_h": 28.51,
+  "p90_trip_risk_aware_h": 26.69,
+  "eta_error_baseline_pct": 14.8,
+  "eta_error_risk_aware_pct": 9.9,
+  "blockage_encounter_baseline_pct": 17.3,
+  "blockage_encounter_risk_aware_pct": 10.3,
+  "reroute_success_pct": 59.6,
+  "trips_exposed_baseline": 104,
+  "decision_latency_ms_p95": 6.1,
+  "cold_chain_breaches_baseline": 37,
+  "cold_chain_breaches_risk_aware": 23,
+  "cold_chain_flagged_before_breach_pct": 95.7,
+  "per_od": [
+   {
+    "od": "SLG-GTK",
+    "n": 50,
+    "base_delay_h": 2.33,
+    "aware_delay_h": 4.11
+   },
+   {
+    "od": "GHY-SCR",
+    "n": 50,
+    "base_delay_h": 2.37,
+    "aware_delay_h": 7.88
+   },
+   {
+    "od": "GHY-IMP",
+    "n": 50,
+    "base_delay_h": 2.36,
+    "aware_delay_h": 2.39
+   },
+   {
+    "od": "GHY-AZL",
+    "n": 50,
+    "base_delay_h": 3.74,
+    "aware_delay_h": 7.91
+   },
+   {
+    "od": "GHY-AGT",
+    "n": 50,
+    "base_delay_h": 4.1,
+    "aware_delay_h": 6.86
+   },
+   {
+    "od": "SCR-IMP",
+    "n": 50,
+    "base_delay_h": 3.64,
+    "aware_delay_h": 3.71
+   },
+   {
+    "od": "GHY-TWG",
+    "n": 50,
+    "base_delay_h": 2.37,
+    "aware_delay_h": 2.37
+   },
+   {
+    "od": "DMR-IMP",
+    "n": 50,
+    "base_delay_h": 2.89,
+    "aware_delay_h": 2.12
+   },
+   {
+    "od": "SLG-SCR",
+    "n": 50,
+    "base_delay_h": 5.45,
+    "aware_delay_h": 4.58
+   },
+   {
+    "od": "GHY-SHL",
+    "n": 50,
+    "base_delay_h": 0.98,
+    "aware_delay_h": 0.75
+   },
+   {
+    "od": "SCR-AGT",
+    "n": 50,
+    "base_delay_h": 0.11,
+    "aware_delay_h": 0.11
+   },
+   {
+    "od": "GHY-DBR",
+    "n": 50,
+    "base_delay_h": 0.0,
+    "aware_delay_h": 0.0
+   }
+  ]
+ }
+}
